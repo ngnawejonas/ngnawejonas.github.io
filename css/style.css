@@ -395,6 +395,7 @@ li > a:only-child:after { content: ''; }
     background: url(../images/layer.png)repeat;
     background: rgba(0, 0, 0, 0.5);
     min-height: 770px;
+    padding: 10em 0 12em 0;
 }
 .w3layouts_banner_margin {
     padding: 17em 0em 0em;
