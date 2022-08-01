@@ -1248,3 +1248,19 @@ a.simplelink{
  border: none;
  padding: 0;
 }
+a.inlinelink{
+    border: none;
+    padding: 0;
+    color: #0a8ea0;
+    background: #fff;
+}
+a.paperlink{
+    border: none;
+    padding: 0;
+    color: #fff;
+}
+a.aboutpagelink{
+    border: none;
+    padding: 0;
+    color: #fff;
+}
