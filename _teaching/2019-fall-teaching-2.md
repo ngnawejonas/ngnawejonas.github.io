@@ -10,11 +10,3 @@ location: "Yaounde, Cameroon"
 
 A one week introductory class to statistical machine learning to 4th year students based on the lecture notes of Prof. Marc Deisenroth ([AMMI2018](https://www.deisenroth.cc/teaching/2018-19/foundations-of-machine-learning/))
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======

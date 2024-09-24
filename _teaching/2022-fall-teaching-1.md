@@ -11,12 +11,3 @@ location: "Quebec City, Canada"
 Fall sessions: 2022, 2023, 2024
 French: Introduction à l'apprentissage automatique GIF-7005
 English: Introduction to Machine Learning GIF-7015
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======

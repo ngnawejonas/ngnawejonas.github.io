@@ -10,11 +10,3 @@ location: "Limbe, Cameroon"
 
 Teaching assistant at the [Mathematical Institute for Mathematical Sciences in Cameroon](https://aims-cameroon.org/).
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
