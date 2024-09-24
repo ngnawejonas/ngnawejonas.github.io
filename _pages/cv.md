@@ -8,7 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
+
 [Link to my resume.](http://ngnawejonas.github.io/files/ngnawejonas-resume.pdf)
+
 Education
 ======
 * **PhD in Computer Science** (Ongoing - 2021)
