@@ -37,15 +37,10 @@ Work experience
     * Compression of deep neural networks by quantization and pruning
     * Tools: Python/Tensorflow 2.0, Google Cloud Platform (GCP)
     * Publication: [Robustmix: Improving Robustness by Regularizing the Frequency Bias of Deep Networks](https://openreview.net/forum?id=Na64z0YpOx) (Accepted at NeurIPS 2022 Workshop on Distribution Shifts: Connecting Methods and Applications)
-* **Software Developer Engineer Internship** (Feb-August 2016)
-    * Bolloré Africa Logistics, Port of Douala, Cameroon
-    * Automation and Analysis of the Review of Access Rights to the Information System
-    * Detection of abnormal access rights
-    * Tools: Talend Open Studio, Qlikview, C#, ASP.Net, Microsoft SQL Server, Visual Studio, UML/Merise, BPMN 2.0, PMI Methodology
 * **Computer Engineer** (Jan - Aug 2018)
     * GroupOne Holding Company, Limbe, Cameroun
     * Website development
-    * Fuel consumption prediction projects
+    * Fuel consumption prediction projects (Fraud Detection, Supply prediction)
     * Business plan for startup incubator creation
     * Industrial Maintenance (Refinery) of the Honeywell Experion System
     * IT Support
@@ -54,7 +49,12 @@ Work experience
     * Digitization of administrative procedures for various ministries in Cameroon
     * Development and maintenance of WordPress plugins (WooCommerce)
     * Tools: Electronic Document Management (EDM)/Electronic Archiving(MARCH RM), PHP/Woocommerce, MySQL Workbench, Microsoft Access, Git/Gitlab/Github, Java, Netbeans, SCRUM
-  
+* **Software Developer Engineer Internship** (Feb-August 2016)
+    * Bolloré Africa Logistics, Port of Douala, Cameroon
+    * Automation and Analysis of the Review of Access Rights to the Information System
+    * Detection of abnormal access rights
+    * Tools: Talend Open Studio, Qlikview, C#, ASP.Net, Microsoft SQL Server, Visual Studio, UML/Merise, BPMN 2.0, PMI Methodology
+
 Additional Skills
 ======
 * Data Science/AI: Pytorch, Scikit-Learn, Pandas, Weight&Biases, Matlab, Octave, Docker etc.
