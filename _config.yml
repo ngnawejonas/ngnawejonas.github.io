@@ -26,7 +26,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "PhD Student in Computer Science at Université Laval and Mila-Quebec AI Institute"
   location         : "Quebec, Canada"
-  employer         : "Université Laval"
+  employer         : "Université Laval and Mila-Quebec AI Institute"
   uri              : # URL
   email            : "ngnawejonas@gmai.com" 
 
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : ngnawejonas # Username
+  linkedin         : jonasngnawe # Username
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
@@ -81,6 +81,10 @@ publication_category:
     title: 'Journal Articles'    
   conferences:
     title: 'Conference Papers'
+  workshops:
+    title: 'Workshop Papers'
+  arxiv:
+    title: 'Preprints'
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
