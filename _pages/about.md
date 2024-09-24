@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Jonas Ngnawé's personal website"
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
