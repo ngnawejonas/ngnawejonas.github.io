@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a PhD student at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [Université Laval (IID/LSVN lab)](https://iid.ulaval.ca/en/). I work in the area of Adversarial Machine Learning under the supervision of [Prof. Christian Gagné](https://chgagne.github.io/english/)(Mila & Université Laval) and co-supervised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/)(INRIA & Université Côte d’Azur), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/). I was previously a Google AI resident at the Accra Lab where I was mentored by [Yann Dauphin](https://www.dauphin.io/).
+I am a PhD student at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [Université Laval (IID/LSVN lab)](https://iid.ulaval.ca/en/). I work in the area of Adversarial Machine Learning under the supervision of [Prof. Christian Gagné](https://chgagne.github.io/english/) (Mila & Université Laval) and co-supervised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/) (INRIA & Université Côte d’Azur), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/). I was previously a Google AI resident at the Accra Lab where I was mentored by [Yann Dauphin](https://www.dauphin.io/).
 
 Research Interests
 ======
