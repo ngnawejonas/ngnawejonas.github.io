@@ -17,6 +17,7 @@ Education
     * [Mila](https://mila.quebec/en/directory/jonas-ngnawe) and [Intelligence and Data Institute (IID)](https://iid.ulaval.ca/), Laval University, Quebec
     * Focus: Adversarial Robustness, Distribution Shifts and Uncertainty of Deep Learning Models
     * Research: [Jonas Ngnawé - Google Scholar](https://scholar.google.com/citations?user=KwAxSFsAAAAJ&hl=fr)
+    * [DEEL project's page](https://deel.quebec/en/projets/axe1-robustesse/projet-2/): DEpendable and Explainable Learning - [DEEL-QUEBEC](https://deel.quebec/) - [DEEL-FRANCE](https://www.deel.ai/)
 * **Master in Machine Learning** (2018-2019)
     * [AIMS African Master’s of Machine Intelligence](https://aimsammi.org/), Kigali, Rwanda
     * Funded by Facebook and Google

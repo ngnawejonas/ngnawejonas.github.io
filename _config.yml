@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Jonas Ngnawé"
+title                    : "Jonas Ngnawé's Website"
 title_separator          : "-"
 name                     : &name "Jonas Ngnawé"
 description              : &description "personal description"
