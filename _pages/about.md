@@ -24,6 +24,6 @@ Highlights/News
 
 * Appeared in AIMS Alumni of the Week. Read more about it here: ([link](https://nexteinstein.org/alumoftheweek-jonas-ngnawe-aims-cameroon-17-ammi-19/))
 
-* Acknowledged contribution to the "Mathematics for Machine Learning" by Marc Deisenroth, published in 2020. Check out the book website: ([link](https://mml-book.github.io/))
+* In the Acknowledgments of the book "Mathematics for Machine Learning" by Prof. Marc Deisenroth, published in 2020. Check out the book website: ([link](https://mml-book.github.io/))
 
-* Interesting article in Jeune Afrique about the launch of the Machine Intelligence Master's program (AMMI 2018) in Rwanda: ([link](https://www.jeuneafrique.com/emploi-formation/655910/rwanda-les-premiers-jours-de-cours-des-etudiants-daims-kigali/))
+* AMMI Pioneers [video](https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg) and article in the magazine Jeune Afrique about the launch of the Machine Intelligence Master's program (AMMI 2018) in Rwanda: ([link](https://www.jeuneafrique.com/emploi-formation/655910/rwanda-les-premiers-jours-de-cours-des-etudiants-daims-kigali/))
