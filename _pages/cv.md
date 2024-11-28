@@ -18,17 +18,17 @@ Education
     * Focus: Adversarial Robustness, Distribution Shifts and Uncertainty of Deep Learning Models
     * Research: [Jonas Ngnawé - Google Scholar](https://scholar.google.com/citations?user=KwAxSFsAAAAJ&hl=fr)
     * [DEEL project's page](https://deel.quebec/en/projets/axe1-robustesse/projet-2/): DEpendable and Explainable Learning - [DEEL-QUEBEC](https://deel.quebec/) - [DEEL-FRANCE](https://www.deel.ai/)
-* **Master in Machine Learning** (2018-2019)
+* **Master's in Machine Learning** (2018-2019)
     * [AIMS African Master’s of Machine Intelligence](https://aimsammi.org/), Kigali, Rwanda
     * [Funded by Facebook and Google](https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg)
     * Courses: [Link complete list of courses (Fundamentals, Vision, NLP etc.)](https://github.com/ngnawejonas/AMMI_Courses_2018-2019)
     * Project: Scalable Inference with Distributed Gaussian Processes using the Wasserstein Barycenter.
-* **Master in Mathematical Sciences** (2016-2017)
+* **Master's in Mathematical Sciences** (2016-2017)
     * [African Institute for Mathematical Sciences](https://aims-cameroon.org/), Limbe, Cameroon
     * Project: k-Clustering Problem-Application to a Field Technician Allocation Optimization Problem.
-* **Engineer's Degree in Computer Science** (2011-2016)
+* **Master's Degree in Computer Engineering** (2011-2016)
     * Ecole Nationale Supérieure Polytechnique de Yaoundé, Cameroon
-* **Other:** [Machine Learning Summer School (MLSS), London 2019]((https://sites.google.com/view/mlss-2019#))
+* **Other:** [Machine Learning Summer School (MLSS), London 2019](https://sites.google.com/view/mlss-2019#)
 
 Work experience
 ======
