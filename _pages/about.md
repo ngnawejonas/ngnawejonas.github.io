@@ -19,7 +19,7 @@ Highlights/News
 
 * Neptune.ai Neurips 2024 Paper Communication Challenge (Winner): [Video Link](https://youtu.be/bZ-m1lOOS70)
 
-* Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop) at the "1ère Journée scientifique de l’IID"!
+* Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop) at the ["1ère Journée scientifique de l’IID"](https://iid.ulaval.ca/retour-sur-la-premiere-journee-scientifique-de-linstitut-intelligence-et-donnees/)!
 
 * Our paper on ["Margin Consistency"](https://arxiv.org/abs/2406.18451) is accepted at Neurips 2024! ([Twitter thread](https://x.com/JNgnawe/status/1839315991018483971))
 
