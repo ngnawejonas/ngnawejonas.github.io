@@ -15,6 +15,10 @@ LLMs/VLMs Safety, Adversarial Robustness, Alignment, Control, Uncertainty Estima
 
 Highlights/News
 ======
+* Excited to be a [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe) at Stanford University in Fall 2025, at STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
+
+* Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning Summer School in Edmonton!
+
 * Panelist for the [8th Annual Black in AI Workshop at NeurIPS](https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop) around the theme “AI Regulation & Fairness in the Generative AI Era.”
 
 * Neptune.ai Neurips 2024 Paper Communication Challenge (Winner): [Video Link](https://youtu.be/bZ-m1lOOS70)
