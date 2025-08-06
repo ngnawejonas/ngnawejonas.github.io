@@ -11,7 +11,7 @@ I am a PhD student at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [U
 
 Research Interests
 ======
-LLMs/VLMs Safety, Adversarial Robustness, Alignment, Control, Uncertainty Estimation, Robustness to Distribution Shifts, Test Time Adaptation, Active Learning, etc.
+Thrustworthy AI, LLMs/VLMs Safety, Adversarial Robustness, Robust Finetuning, Alignment, Control, Uncertainty Estimation, Robustness to Distribution Shifts, Test Time Adaptation, Active Learning, etc.
 
 Highlights/News
 ======
