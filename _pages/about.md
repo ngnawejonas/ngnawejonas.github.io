@@ -17,7 +17,8 @@ Highlights/News
 ======
 * Excited to be a [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe) at Stanford University in Fall 2025, at STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
 
-* New Preprint: [A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079), Maxime Heuillet, Rishika Bhagwatkar, *Jonas Ngnawé*, Yann Pequignot, Alexandre Larouche, Christian Gagné and Irina Rish, Ola Ahmad, Audrey Durand.
+* Two papers accepted at the Reliable ML workshop at NeurIPS 2025: [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://arxiv.org/abs/2509.23325) and 
+[A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
 
 * Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning Summer School in Edmonton!
 
