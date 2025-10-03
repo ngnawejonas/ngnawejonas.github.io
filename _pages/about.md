@@ -11,7 +11,7 @@ I am a PhD student at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [U
 
 Research Interests
 ======
-Thrustworthy AI, LLMs/VLMs Safety, Adversarial Robustness, Robust Finetuning, Alignment, Control, Uncertainty Estimation, Robustness to Distribution Shifts, Test Time Adaptation, Active Learning, etc.
+Thrustworthy AI, LLMs/VLMs Safety, Adversarial Robustness, Robust Finetuning, Alignment, Uncertainty Estimation, Robustness to Distribution Shifts, Test-Time Scaling/Adaptation, Active Learning, etc.
 
 Highlights/News
 ======
@@ -20,7 +20,7 @@ Highlights/News
 * Two papers accepted at the [Reliable ML workshop at NeurIPS 2025](https://reliablemlworkshop.github.io/): 
    - [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://arxiv.org/abs/2509.23325) 
    - [A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
-   
+
 * Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning Summer School in Edmonton!
 
 * Panelist for the [8th Annual Black in AI Workshop at NeurIPS](https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop) around the theme “AI Regulation & Fairness in the Generative AI Era.”
