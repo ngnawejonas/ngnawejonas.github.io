@@ -17,9 +17,10 @@ Highlights/News
 ======
 * Excited to be a [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe) at Stanford University in Fall 2025, at STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
 
-* Two papers accepted at the Reliable ML workshop at NeurIPS 2025: [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://arxiv.org/abs/2509.23325) and 
-[A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
-
+* Two papers accepted at the [Reliable ML workshop at NeurIPS 2025](https://reliablemlworkshop.github.io/): 
+   - [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://arxiv.org/abs/2509.23325) 
+   - [A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
+   
 * Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning Summer School in Edmonton!
 
 * Panelist for the [8th Annual Black in AI Workshop at NeurIPS](https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop) around the theme “AI Regulation & Fairness in the Generative AI Era.”
