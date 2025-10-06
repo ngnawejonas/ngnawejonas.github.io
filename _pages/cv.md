@@ -51,7 +51,7 @@ Work experience
     * Digitization of administrative procedures for various ministries in Cameroon
     * Development and maintenance of WordPress plugins (WooCommerce)
     * Tools: Electronic Document Management (EDM)/Electronic Archiving(MARCH RM), PHP/Woocommerce, MySQL Workbench, Microsoft Access, Git/Gitlab/Github, Java, Netbeans, SCRUM
-* **Software Developer Engineer Internship** (Feb-August 2016)
+* **Software Engineer Intern** (Feb-August 2016)
     * Bolloré Africa Logistics, Port of Douala, Cameroon
     * Automation and Analysis of the Review of Access Rights to the Information System
     * Detection of abnormal access rights
