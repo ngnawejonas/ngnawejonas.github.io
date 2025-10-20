@@ -31,7 +31,7 @@ Highlights/News
 
 * Our paper on ["Margin Consistency"](https://arxiv.org/abs/2406.18451) is accepted at Neurips 2024! ([Twitter thread](https://x.com/JNgnawe/status/1839315991018483971))
 
-* Appeared in AIMS Alumni of the Week. Read more about it here: ([link](https://nexteinstein.org/alumoftheweek-jonas-ngnawe-aims-cameroon-17-ammi-19/))
+* Appeared in AIMS Alumni of the Week. Read more about it here: ([link](https://nexteinstein.org/?p=16222))
 
 * In the Acknowledgments of the book "Mathematics for Machine Learning" by Prof. Marc Deisenroth, published in 2020. Check out the book website: ([link](https://mml-book.github.io/))
 
