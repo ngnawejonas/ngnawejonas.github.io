@@ -15,7 +15,7 @@ Thrustworthy AI, LLMs/VLMs Safety, Adversarial Robustness, Robust Finetuning, Al
 
 Highlights/News
 ======
-* Our work [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://openreview.net/forum?id=aIBFTh2ThF) is accepted at ICLR 2026!
+* Our work [Robust Fine-Tuning with Epsilon-Scheduling](https://openreview.net/forum?id=aIBFTh2ThF) is accepted at ICLR 2026!
 
 * Excited to join Stanford University this Fall 2025 as a [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe) at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
 
