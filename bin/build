@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cd "$ROOT_DIR"
+
+RUBY_VERSION="$(< .ruby-version)"
+
+if command -v rbenv >/dev/null 2>&1; then
+  export RBENV_VERSION="$RUBY_VERSION"
+  export BUNDLE_PATH="${BUNDLE_PATH:-vendor/bundle}"
+  exec rbenv exec bundle exec jekyll build "$@"
+fi
+
+CURRENT_RUBY="$(ruby -e 'print RUBY_VERSION' 2>/dev/null || true)"
+
+if [[ "$CURRENT_RUBY" != "$RUBY_VERSION" ]]; then
+  echo "Ruby $RUBY_VERSION is required, but the current shell is using Ruby ${CURRENT_RUBY:-unknown}."
+  echo "Install and use rbenv, or run this repo from a Ruby $RUBY_VERSION environment."
+  exit 1
+fi
+
+export BUNDLE_PATH="${BUNDLE_PATH:-vendor/bundle}"
+exec bundle exec jekyll build "$@"

@@ -8,6 +8,6 @@ date: 2022-09-01
 location: "Quebec City, Canada"
 ---
 [Course description on Prof. Christian Gagné's page](https://chgagne.github.io/iaa-ulaval/english.html)
-Fall sessions: 2022, 2023, 2024
+Fall sessions: Since 2022
 French: Introduction à l'apprentissage automatique GIF-7005
 English: Introduction to Machine Learning GIF-7015
