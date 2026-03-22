@@ -37,12 +37,33 @@
 }
 
 .masthead__menu {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 0.75rem;
 
   ul {
     margin: 0;
     padding: 0;
     clear: both;
     list-style-type: none;
+  }
+}
+
+#site-nav {
+  min-width: 0;
+}
+
+@media (max-width: 480px) {
+  .masthead {
+    &__inner-wrap {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+  }
+
+  .masthead__menu {
+    column-gap: 0.5rem;
   }
 }
 

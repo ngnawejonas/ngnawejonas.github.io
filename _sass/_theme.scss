@@ -302,23 +302,12 @@ html[data-theme="dark"] .btn--inverse:hover {
   background-color: var(--theme-overlay);
 }
 
-.masthead__menu {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-#site-nav {
-  flex: 1 1 auto;
-  min-width: 0;
-}
-
 .theme-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.75rem;
-  height: 2.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
   padding: 0;
   border: 1px solid var(--theme-border);
   border-radius: 999px;
