@@ -9,13 +9,13 @@ redirect_from:
 
 {% include base_path %}
 
-[Link to my resume.](http://ngnawejonas.github.io/files/ngnawejonas-resume.pdf)
+[Link to my resume.](/files/ngnawejonas-resume.pdf)
 
 Education
 ======
 * **PhD in Computer Science** (Fall 2021 - Ongoing)
     * [Mila](https://mila.quebec/en/directory/jonas-ngnawe) and [Intelligence and Data Institute (IID)](https://iid.ulaval.ca/), Laval University, Quebec
-    * [Visiting Student Researcher at Standford Universty](https://profiles.stanford.edu/jonas-ngnawe)
+    * [Visiting Student Researcher at Stanford University](https://profiles.stanford.edu/jonas-ngnawe)
     * Focus: Adversarial Robustness, Distribution Shifts and Uncertainty of Deep Learning Models
     * Research: [Jonas Ngnawé - Google Scholar](https://scholar.google.com/citations?user=KwAxSFsAAAAJ&hl=fr)
     * [DEEL project's page](https://deel.quebec/en/projets/axe1-robustesse/projet-2/): DEpendable and Explainable Learning - [DEEL-QUEBEC](https://deel.quebec/) - [DEEL-FRANCE](https://www.deel.ai/)
@@ -86,7 +86,7 @@ Activities
 * **Keynote speaker** (Dec. 27, 2022)
     * Deep Learning IndabaX-Cameroon: Robustness in AI
 * **Organizing committee member**
-    * [Interpolate workshop @Neurips2022: First Workshop on Interpolation Regularizers and Beyond.]((https://sites.google.com/view/interpolation-workshop))
+    * [Interpolate workshop @Neurips2022: First Workshop on Interpolation Regularizers and Beyond.](https://sites.google.com/view/interpolation-workshop)
 * **Founding member (Since 2020)**
     * [Kmer-AI](https://kmer-ai.org/), an association for the promotion and vulgarization of AI and Machine Learning in Cameroon.
 * **Co-organizer (Since 2020)**
