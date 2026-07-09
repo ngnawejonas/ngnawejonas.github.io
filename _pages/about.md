@@ -11,9 +11,11 @@ I am a PhD Candidate at [Mila-Quebec AI Institute](https://mila.quebec/en/) and 
 
 Research Interests
 ======
-* **Robustness & Safety:** Adversarial Robustness, Robust Finetuning, Robustness to Distribution Shifts, LLMs/VLMs Safety, Alignment
-* **Reliable Deployment:** Uncertainty Estimation, Test-Time Scaling/Adaptation, Active Learning
-* **Science of Deep Learning:** Grokking, Emergent Behaviours
+My research aims to build safe, efficient and trustworthy machine learning systems that are reliable when deployed in the real world. My work spans three threads:
+
+* **Robustness & Safety:** adversarial robustness, robust fine-tuning, robustness to distribution shifts, and the safety and alignment of foundation models (LLMs/VLMs)
+* **Uncertainty and Data Effeciency:** uncertainty estimation, test-time scaling and adaptation, and active learning
+* **Science of Deep Learning:** understanding training dynamics and generalization, including grokking and emergent behaviours
 
 Highlights/News
 ======
