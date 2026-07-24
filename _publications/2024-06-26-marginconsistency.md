@@ -1,5 +1,6 @@
 ---
 title: "Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers."
+authors: "J. Ngnawé, S. Sahoo, Y. Pequignot, F. Precioso, C. Gagné"
 collection: publications
 category: conferences
 permalink: /publication/2024-11-01-margin-consistency
@@ -7,7 +8,7 @@ excerpt: 'A novel property of deep robust classifiers that allows to use the log
 header:
   teaser: publications/margin-consistency-thumb.png
 date: 2024-11-01
-venue: 'Neurips 2024'
+venue: 'NeurIPS 2024'
 slidesurl: 'http://ngnawejonas.github.io/files/Margin_Consistency_slides.pdf'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/hash/29753d93c5fc11167567e5df800308ae-Abstract-Conference.html'
 citation: 'Ngnawé, J., Sahoo, S., Pequignot, Y., Precioso, F., & Gagné, C. (2024). Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers. The Thirty-eighth Annual Conference on Neural Information Processing Systems.'

@@ -1,5 +1,6 @@
 ---
 title: "Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Epsilon-Scheduling"
+authors: "J. Ngnawé, M. Heuillet, S. Sahoo, Y. Pequignot, O. Ahmad, A. Durand, F. Precioso, C. Gagné"
 collection: publications
 category: conferences
 permalink: /publication/2025-09-27-epsilon-scheduling
@@ -8,7 +9,6 @@ header:
   teaser: publications/epsilon-scheduling-thumb.png
 date: 2026-01-25
 venue: 'ICLR 2026'
-slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2509.23325'
 citation: 'Ngnawé, J., Heuillet, M., Sahoo, S., Pequignot, Y., Ahmad, O., Durand, A., Precioso, F., Gagné, C. (2026). Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Epsilon-Scheduling. The Fourteenth International Conference on Learning Representations (ICLR 2026).'
 ---

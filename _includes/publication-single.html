@@ -1,0 +1,62 @@
+{% include base_path %}
+
+{% assign teaser = post.header.teaser %}
+{% assign me = "J. Ngnawé" %}
+
+<div class="pub">
+  {% if teaser %}
+    <div class="pub__thumb">
+      <a href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true">
+        <img src=
+          {% if teaser contains "://" %}
+            "{{ teaser }}"
+          {% else %}
+            "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+          {% endif %}
+          loading="lazy" alt="">
+      </a>
+    </div>
+  {% endif %}
+
+  <div class="pub__body">
+    <h3 class="pub__title">
+      <a href="{{ base_path }}{{ post.url }}">{{ post.title | markdownify | remove: "<p>" | remove: "</p>" }}</a>
+    </h3>
+
+    {% if post.authors %}
+      <p class="pub__authors">{{ post.authors | replace: me, '<strong class="pub__me">J. Ngnawé</strong>' }}</p>
+    {% endif %}
+
+    <p class="pub__venue">
+      <span class="pub__badge">{{ post.venue }}</span>
+      {% if post.date %}<span class="pub__year">{{ post.date | date: "%Y" }}</span>{% endif %}
+    </p>
+
+    {% if post.excerpt %}
+      <p class="pub__excerpt">{{ post.excerpt | markdownify | remove: "<p>" | remove: "</p>" }}</p>
+    {% endif %}
+
+    {% comment %}
+      Empty strings are truthy in Liquid, so every link is tested for content
+      as well — otherwise a blank `slidesurl:` renders a dead button.
+    {% endcomment %}
+    <p class="pub__links">
+      {% if post.paperurl and post.paperurl != "" %}
+        <a href="{{ post.paperurl }}" class="btn btn--info btn--small">Paper</a>
+      {% endif %}
+      {% if post.slidesurl and post.slidesurl != "" %}
+        <a href="{{ post.slidesurl }}" class="btn btn--info btn--small">Slides</a>
+      {% endif %}
+      {% if post.codeurl and post.codeurl != "" %}
+        <a href="{{ post.codeurl }}" class="btn btn--info btn--small">Code</a>
+      {% endif %}
+    </p>
+
+    {% if post.citation and post.citation != "" %}
+      <details class="pub__cite">
+        <summary>Citation</summary>
+        <p>{{ post.citation }}</p>
+      </details>
+    {% endif %}
+  </div>
+</div>

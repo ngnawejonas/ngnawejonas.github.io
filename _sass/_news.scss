@@ -12,7 +12,7 @@
   padding-bottom: 1.5em;
   margin-bottom: 1.5em;
   /* keeps entries apart even when one has no date to anchor it */
-  border-bottom: 1px solid $border-color;
+  border-bottom: 1px solid var(--theme-border);
 
   &:last-child {
     padding-bottom: 0;
@@ -30,7 +30,7 @@
   margin-bottom: 0.25em;
   font-family: $sans-serif-narrow;
   font-weight: bold;
-  color: mix(#fff, $text-color, 25%);
+  color: var(--theme-text-soft);
 
   @include breakpoint($medium) {
     flex: 0 0 7em;
@@ -77,7 +77,7 @@
        them on a card rather than cropping to a common shape */
     object-fit: contain;
     background-color: #fff;
-    border: 1px solid $border-color;
+    border: 1px solid var(--theme-border);
     border-radius: $border-radius;
   }
 }

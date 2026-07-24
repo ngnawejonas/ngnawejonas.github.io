@@ -1,5 +1,6 @@
 ---
 title: "A Layer Selection Approach to Test Time Adaptation"
+authors: "S. Sahoo, M. ElAraby, J. Ngnawé, Y. Pequignot, F. Precioso, C. Gagné"
 collection: publications
 category: conferences
 permalink: /publication/2025-02-23-layer-selection
@@ -8,7 +9,6 @@ header:
   teaser: publications/layer-selection-thumb.png
 date: 2025-02-23
 venue: 'AAAI 2025'
-slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2404.03784v2'
 citation: 'Sahoo, S., ElAraby, M., Ngnawe, J., Pequignot, Y. B., Precioso, F., & Gagné, C. (2025, April). A layer selection approach to test time adaptation. In Proceedings of the AAAI Conference on Artificial Intelligence (Vol. 39, No. 19, pp. 20237-20245).'
 ---

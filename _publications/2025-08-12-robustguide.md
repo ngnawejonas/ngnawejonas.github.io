@@ -1,5 +1,6 @@
 ---
 title: "A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy"
+authors: "M. Heuillet, R. Bhagwatkar, J. Ngnawé, Y. Pequignot, A. Larouche, C. Gagné, I. Rish, O. Ahmad, A. Durand"
 collection: publications
 category: arxiv
 permalink: /publication/2025-08-12-robust-generalization-guide
@@ -8,7 +9,6 @@ header:
   teaser: publications/robust-generalization-guide-thumb.png
 date: 2025-08-12
 venue: 'NeurIPS 2025 Reliable ML Workshop'
-slidesurl: ''
 paperurl: 'https://arxiv.org/abs/2508.14079'
 citation: 'Heuillet, M., Bhagwatkar, R., Ngnawé. J., Pequignot, Y., Larouche, A., Gagné, C., Rish, I., Ahmad, O., Durand, A. (2025). A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy. arXiv preprint arXiv:2508.14079.'
 ---
