@@ -24,6 +24,18 @@
           {% endif %}
           alt="">
       </div>
+    {% elsif teaser %}
+      <div class="archive__item-thumb">
+        <a href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true">
+          <img src=
+            {% if teaser contains "://" %}
+              "{{ teaser }}"
+            {% else %}
+              "{{ teaser | prepend: "/images/" | prepend: base_path }}"
+            {% endif %}
+            loading="lazy" alt="">
+        </a>
+      </div>
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">

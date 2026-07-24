@@ -4,11 +4,18 @@ collection: publications
 category: conferences
 permalink: /publication/2024-11-01-margin-consistency
 excerpt: 'A novel property of deep robust classifiers that allows to use the logit margin as a proxy score for input margin and efficiently detect non-robust samples, vulnerable to adversarial attacks.'
+header:
+  teaser: publications/margin-consistency-thumb.png
 date: 2024-11-01
 venue: 'Neurips 2024'
 slidesurl: 'http://ngnawejonas.github.io/files/Margin_Consistency_slides.pdf'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/hash/29753d93c5fc11167567e5df800308ae-Abstract-Conference.html'
 citation: 'Ngnawé, J., Sahoo, S., Pequignot, Y., Precioso, F., & Gagné, C. (2024). Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers. The Thirty-eighth Annual Conference on Neural Information Processing Systems.'
 ---
+
+<figure>
+  <img src="/images/publications/margin-consistency.png" alt="Schematic contrasting input space and feature space. In input space, samples sit at different distances from a curved decision boundary, with epsilon-balls marking robust and non-robust points; in feature space, the same ordering of distances is preserved.">
+  <figcaption><i>Margin consistency</i>: when a robust model preserves the ordering between input-space margins and logit margins, the cheap logit margin can stand in for the intractable input margin to flag brittle decisions.</figcaption>
+</figure>
 
 Despite extensive research on adversarial training strategies to improve robustness, the decisions of even the most robust deep learning models can still be quite sensitive to imperceptible perturbations, creating serious risks when deploying them for high-stakes real-world applications. While detecting such cases may be critical, evaluating a model's vulnerability at a per-instance level using adversarial attacks is computationally too intensive and unsuitable for real-time deployment scenarios. The input space margin is the exact score to detect non-robust samples and is intractable for deep neural networks. This paper introduces the concept of margin consistency -- a property that links the input space margins and the logit margins in robust models -- for efficient detection of vulnerable samples. First, we establish that margin consistency is a necessary and sufficient condition to use a model's logit margin as a score for identifying non-robust samples. Next, through comprehensive empirical analysis of various robustly trained models on CIFAR10 and CIFAR100 datasets, we show that they indicate strong margin consistency with a strong correlation between their input space margins and the logit margins. Then, we show that we can effectively use the logit margin to confidently detect brittle decisions with such models and accurately estimate robust accuracy on an arbitrarily large test set by estimating the input margins only on a small subset. Finally, we address cases where the model is not sufficiently margin-consistent by learning a pseudo-margin from the feature representation. Our findings highlight the potential of leveraging deep representations to efficiently assess adversarial vulnerability in deployment scenarios.

@@ -5,6 +5,28 @@ author_profile: true
 redirect_from: 
   - /about/
   - /about.html
+feature_row:
+  - image_path: news/neptune-challenge-2024.jpg
+    alt: "Video thumbnail: explaining the Margin Consistency paper at three levels of expertise"
+    title: "Neptune.ai Paper Communication Challenge"
+    excerpt: "Winner of the NeurIPS 2024 challenge — explaining *Margin Consistency* at three levels, from 1st grader to researcher."
+    url: "https://youtu.be/bZ-m1lOOS70"
+    btn_label: "Watch the video"
+    btn_class: "btn--info btn--small"
+  - image_path: news/mml-book.jpg
+    alt: "Cover of the book Mathematics for Machine Learning"
+    title: "Mathematics for Machine Learning"
+    excerpt: "In the acknowledgments of the 2020 book by Deisenroth, Faisal and Ong."
+    url: "https://mml-book.github.io/"
+    btn_label: "Book website"
+    btn_class: "btn--info btn--small"
+  - image_path: news/ammi-pioneers.jpg
+    alt: "Video thumbnail from the AMMI Pioneers documentary, filmed in a classroom in Kigali"
+    title: "AMMI Pioneers"
+    excerpt: "On the launch of the African Master's in Machine Intelligence in Kigali — also covered in *Jeune Afrique*."
+    url: "https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg"
+    btn_label: "Watch the video"
+    btn_class: "btn--info btn--small"
 ---
 
 I am a PhD Candidate at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [Université Laval (IID/LSVN lab)](https://iid.ulaval.ca/en/). I work in the area of Adversarial Machine Learning under the supervision of [Prof. Christian Gagné](https://chgagne.github.io/english/) (Mila & Université Laval) and co-supervised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/) (INRIA & Université Côte d’Azur), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/). I was previously a Google AI resident at the Accra Lab where I was mentored by [Yann Dauphin](https://www.dauphin.io/). I'm currently a visiting student researcher at [Stanford Artificial Intelligence Lab](https://ai.stanford.edu/), in the [Stanford Trustworthy AI Research group (STAIR)](https://stairlab.stanford.edu/) led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/).
@@ -33,12 +55,17 @@ Highlights/News
 
 * **Dec 2024** — Neptune.ai Neurips 2024 Paper Communication Challenge (Winner): [Video Link](https://youtu.be/bZ-m1lOOS70)
 
-* **Nov 2024** — Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop) at the ["1ère Journée scientifique de l’IID"](https://iid.ulaval.ca/retour-sur-la-premiere-journee-scientifique-de-linstitut-intelligence-et-donnees/)!
+* **Nov 2024** — Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop) at the ["1ère Journée scientifique de l’IID"](https://web.iid.ulaval.ca/post/retour-sur-la-premi%C3%A8re-journ%C3%A9e-scientifique-de-l-institut-intelligence-et-donn%C3%A9es)!
 
 * **Sep 2024** — Our paper on ["Margin Consistency"](https://arxiv.org/abs/2406.18451) is accepted at Neurips 2024! ([Twitter thread](https://x.com/JNgnawe/status/1839315991018483971))
 
-* Appeared in AIMS Alumni of the Week. Read more about it here: ([link](https://medium.com/aims-community/alumoftheweek-jonas-ngnaw%C3%A9-aims-cameroon-17-ammi-19-120e01c686da))
+<figure>
+  <img src="/images/news/iid-best-poster-2024.jpg" alt="The best poster award winners on stage at the first IID scientific day, each holding a certificate.">
+  <figcaption>Best poster award at the <a href="https://web.iid.ulaval.ca/post/retour-sur-la-premi%C3%A8re-journ%C3%A9e-scientifique-de-l-institut-intelligence-et-donn%C3%A9es">1ère Journée scientifique de l'IID</a>, Université Laval, November 2024.</figcaption>
+</figure>
 
-* In the Acknowledgments of the book "Mathematics for Machine Learning" by Prof. Marc Deisenroth, published in 2020. Check out the book website: ([link](https://mml-book.github.io/))
+In the media
+======
+{% include feature_row %}
 
-* AMMI Pioneers [video](https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg) and [article](https://www.jeuneafrique.com/emploi-formation/655910/rwanda-les-premiers-jours-de-cours-des-etudiants-daims-kigali/) in the magazine Jeune Afrique about the launch of the Machine Intelligence Master's program (AMMI 2018) in Rwanda.
+Also featured as [AIMS Alumni of the Week](https://medium.com/aims-community/alumoftheweek-jonas-ngnaw%C3%A9-aims-cameroon-17-ammi-19-120e01c686da).
