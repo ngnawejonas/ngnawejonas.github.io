@@ -1,0 +1,27 @@
+{% include base_path %}
+
+<div class="news">
+  {% for item in site.data.news %}
+    <div class="news__item">
+      <div class="news__meta">{{ item.date }}</div>
+
+      <div class="news__content">
+        {{ item.body | markdownify }}
+
+        {% if item.image %}
+          {% if item.image contains "://" %}
+            {% capture news_img %}{{ item.image }}{% endcapture %}
+          {% else %}
+            {% capture news_img %}{{ item.image | prepend: "/images/" | prepend: base_path }}{% endcapture %}
+          {% endif %}
+
+          <div class="news__media">
+            {% if item.url %}<a href="{{ item.url }}">{% endif %}
+              <img src="{{ news_img }}" alt="{{ item.alt }}" loading="lazy">
+            {% if item.url %}</a>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,83 @@
+/* ==========================================================================
+   NEWS FEED
+   Each entry keeps its own image directly beneath its text, so the picture
+   stays attached to the item it belongs to.
+   ========================================================================== */
+
+.news {
+  margin-bottom: 2em;
+}
+
+.news__item {
+  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
+  /* keeps entries apart even when one has no date to anchor it */
+  border-bottom: 1px solid $border-color;
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.news__meta {
+  margin-bottom: 0.25em;
+  font-family: $sans-serif-narrow;
+  font-weight: bold;
+  color: mix(#fff, $text-color, 25%);
+
+  @include breakpoint($medium) {
+    flex: 0 0 7em;
+    margin-bottom: 0;
+    padding-right: 1em;
+  }
+}
+
+.news__content {
+  min-width: 0; /* let long links wrap instead of stretching the row */
+
+  @include breakpoint($medium) {
+    flex: 1 1 auto;
+  }
+
+  > p:first-child {
+    margin-top: 0;
+  }
+
+  > p:last-child,
+  > ul:last-child {
+    margin-bottom: 0;
+  }
+
+  ul {
+    margin-top: 0.4em;
+  }
+}
+
+.news__media {
+  margin-top: 0.75em;
+  max-width: 420px;
+
+  a {
+    display: block;
+    border-bottom: none;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    /* the entries mix event photos, promo cards and a book cover, so contain
+       them on a card rather than cropping to a common shape */
+    object-fit: contain;
+    background-color: #fff;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+}

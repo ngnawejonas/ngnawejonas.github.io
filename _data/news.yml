@@ -1,0 +1,86 @@
+# Highlights/News shown on the about page, newest first.
+#
+# Each entry takes:
+#   date  — short label for the left column (leave out if there isn't one)
+#   body  — markdown, so links and nested lists work as usual
+#   image — file under /images/, shown directly beneath that entry
+#   alt   — description of the image for screen readers
+#   url   — optional, makes the image click through
+
+- date: "Jan 2026"
+  body: >
+    Our work [Robust Fine-Tuning with Epsilon-Scheduling](https://openreview.net/forum?id=aIBFTh2ThF)
+    is accepted at ICLR 2026!
+
+- date: "Dec 2025"
+  body: |
+    Presented two papers at the [Reliable ML workshop at NeurIPS 2025](https://reliablemlworkshop.github.io/):
+
+    - [Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling](https://arxiv.org/abs/2509.23325)
+    - [A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
+
+- date: "Sep 2025"
+  body: >
+    Excited to join Stanford University this Fall 2025 as a
+    [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe)
+    at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
+
+- date: "Jul 2025"
+  body: >
+    Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning
+    Summer School in Edmonton!
+
+- date: "Dec 2024"
+  body: >
+    Panelist for the [8th Annual Black in AI Workshop at NeurIPS](https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop)
+    around the theme “AI Regulation & Fairness in the Generative AI Era.”
+  image: news/black-in-ai-neurips-2024.jpg
+  alt: "Programme card for the 8th Annual Black in AI Workshop at NeurIPS 2024, listing Jonas Ngnawé among the guest panelists."
+  url: "https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop"
+
+- date: "Dec 2024"
+  body: >
+    Winner of the Neptune.ai NeurIPS 2024 Paper Communication Challenge, explaining
+    *Margin Consistency* at three levels — from 1st grader to researcher:
+    [video](https://youtu.be/bZ-m1lOOS70).
+  image: news/neptune-challenge-2024.jpg
+  alt: "Video thumbnail: the Margin Consistency paper explained at three levels of expertise."
+  url: "https://youtu.be/bZ-m1lOOS70"
+
+- date: "Nov 2024"
+  body: >
+    Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop)
+    at the ["1ère Journée scientifique de l'IID"](https://web.iid.ulaval.ca/post/retour-sur-la-premi%C3%A8re-journ%C3%A9e-scientifique-de-l-institut-intelligence-et-donn%C3%A9es)!
+  image: news/iid-best-poster-2024.jpg
+  alt: "The best poster award winners on stage at the first IID scientific day, each holding a certificate."
+  url: "https://web.iid.ulaval.ca/post/retour-sur-la-premi%C3%A8re-journ%C3%A9e-scientifique-de-l-institut-intelligence-et-donn%C3%A9es"
+
+- date: "Sep 2024"
+  body: >
+    Our paper on ["Margin Consistency"](https://arxiv.org/abs/2406.18451) is accepted at
+    NeurIPS 2024! ([Twitter thread](https://x.com/JNgnawe/status/1839315991018483971))
+
+- body: >
+    Featured as AIMS Alumni of the Week —
+    [read the piece](https://medium.com/aims-community/alumoftheweek-jonas-ngnaw%C3%A9-aims-cameroon-17-ammi-19-120e01c686da).
+  image: news/aims-alum-of-the-week.jpg
+  alt: "AIMS Alum of the Week card featuring Jonas Ngnawé and a quote about joining the Google AI residency in Accra."
+  url: "https://medium.com/aims-community/alumoftheweek-jonas-ngnaw%C3%A9-aims-cameroon-17-ammi-19-120e01c686da"
+
+- date: "2020"
+  body: >
+    In the acknowledgments of the book "Mathematics for Machine Learning" by
+    Prof. Marc Deisenroth — [book website](https://mml-book.github.io/).
+  image: news/mml-book.jpg
+  alt: "Cover of the book Mathematics for Machine Learning."
+  url: "https://mml-book.github.io/"
+
+- date: "2018"
+  body: >
+    AMMI Pioneers [video](https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg) and
+    [article](https://www.jeuneafrique.com/emploi-formation/655910/rwanda-les-premiers-jours-de-cours-des-etudiants-daims-kigali/)
+    in the magazine Jeune Afrique about the launch of the Machine Intelligence Master's
+    program (AMMI 2018) in Rwanda.
+  image: news/ammi-pioneers.jpg
+  alt: "Still from the AMMI Pioneers video, filmed in a classroom in Kigali."
+  url: "https://youtu.be/5Ssn-KYvdy0?si=6YJePlZg3ykAm2Cg"
