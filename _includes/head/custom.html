@@ -8,7 +8,9 @@
   fall back — switch the hrefs below back to them.
 {% endcomment %}
 {% assign iv = "njv1" %}
-{% for size in "57,60,72,76,114,120,144,152,180" | split: "," %}
+{% comment %} Liquid rejects filters inside a for expression, so build the list first. {% endcomment %}
+{% assign apple_sizes = "57,60,72,76,114,120,144,152,180" | split: "," %}
+{% for size in apple_sizes %}
 <link rel="apple-touch-icon" sizes="{{ size }}x{{ size }}" href="{{ base_path }}/images/nj-apple-touch-icon-{{ size }}x{{ size }}.png?v={{ iv }}">
 {% endfor %}
 <link rel="icon" type="image/png" href="{{ base_path }}/images/nj-favicon-16x16.png?v={{ iv }}" sizes="16x16">
