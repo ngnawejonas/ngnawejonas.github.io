@@ -72,6 +72,8 @@
     .authors { font-size: 1.12rem; margin: 0 0 4px; }
     .authors span { display: inline-block; margin: 0 10px; }
     .affil { color: var(--muted); font-size: 0.98rem; margin: 0 0 6px; }
+    .affil span { display: inline-block; margin: 0 8px; }
+    .authors sup, .affil sup { font-size: 0.7em; margin-left: 1px; }
     .venue { color: var(--muted); font-size: 0.98rem; margin: 0 0 22px; }
     .buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
     .btn {
@@ -159,9 +161,23 @@
   <div class="wrap">
     <h1>Mind the <span class="spike">Spike</span></h1>
     <p class="subtitle">Mechanisms and Brittleness of Visual Massive Activations in Large Vision&ndash;Language Models</p>
-    <!-- AUTHORS: fill in after the review period. -->
-    <p class="authors"><span>Author One</span><span>Author Two</span><span>Author Three</span></p>
-    <p class="affil">Affiliation</p>
+    <p class="authors">
+      <span><a href="https://ngnawejonas.github.io/">Jonas Ngnaw&eacute;</a><sup>1,2,5</sup></span>
+      <span>Yann Pequignot<sup>1,2</sup></span>
+      <span>Sabyasachi Sahoo<sup>1,2</sup></span>
+      <br>
+      <span>Christian Gagn&eacute;<sup>1,2,3</sup></span>
+      <span>Fr&eacute;d&eacute;ric Precioso<sup>4</sup></span>
+      <span>Sanmi Koyejo<sup>5</sup></span>
+    </p>
+    <p class="affil">
+      <span><sup>1</sup>Universit&eacute; Laval (IID)</span>
+      <span><sup>2</sup>Mila &ndash; Quebec AI Institute</span>
+      <span><sup>3</sup>Canada CIFAR AI Chair</span>
+      <br>
+      <span><sup>4</sup>Universit&eacute; C&ocirc;te d'Azur, CNRS, Inria, I3S, Maasai</span>
+      <span><sup>5</sup>Stanford University</span>
+    </p>
     <p class="venue">Under review</p>
     <div class="buttons">
       <!-- Replace each href and remove the "soon" class once the link exists. -->
@@ -356,10 +372,11 @@
   <section class="soft" id="bibtex">
     <div class="wrap narrow">
       <div class="bibhead"><h2 style="margin:0">BibTeX</h2><button class="copy" id="copyBib">Copy</button></div>
-      <pre id="bib">@article{mindthespike2026,
+      <pre id="bib">@article{ngnawe2026mindthespike,
   title   = {Mind the Spike: Mechanisms and Brittleness of Visual Massive
              Activations in Large Vision--Language Models},
-  author  = {Author One and Author Two and Author Three},
+  author  = {Ngnaw{\'e}, Jonas and Pequignot, Yann and Sahoo, Sabyasachi and
+             Gagn{\'e}, Christian and Precioso, Fr{\'e}d{\'e}ric and Koyejo, Sanmi},
   journal = {arXiv preprint arXiv:XXXX.XXXXX},
   year    = {2026}
 }</pre>
