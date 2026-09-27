@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mind the Spike</title>
+  <meta name="description" content="Mechanisms and brittleness of visual massive activations in large vision-language models, across 25 LVLMs.">
+  <meta property="og:title" content="Mind the Spike: Mechanisms and Brittleness of Visual Massive Activations in LVLMs">
+  <meta property="og:description" content="Ten of 25 LVLMs form visual spikes at an inherited switch. A 1/255 image perturbation creates or removes them, and removing the trigger component prevents them.">
+  <meta property="og:image" content="static/images/fig_one_top.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --bg-soft: #f6f7f9;
+      --text: #1d1f23;
+      --muted: #5b616b;
+      --line: #e3e6eb;
+      --accent: #c8102e;
+      --accent-soft: #fdecef;
+      --link: #1f5fbf;
+      --btn: #26292e;
+      --btn-text: #ffffff;
+      --code-bg: #f3f4f6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #121418;
+        --bg-soft: #1a1d22;
+        --text: #e7e9ec;
+        --muted: #a2a8b1;
+        --line: #2c3037;
+        --accent: #ff5a6e;
+        --accent-soft: #2a1a1e;
+        --link: #7fb0ff;
+        --btn: #e7e9ec;
+        --btn-text: #121418;
+        --code-bg: #1e2127;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #121418; --bg-soft: #1a1d22; --text: #e7e9ec; --muted: #a2a8b1; --line: #2c3037;
+      --accent: #ff5a6e; --accent-soft: #2a1a1e; --link: #7fb0ff; --btn: #e7e9ec; --btn-text: #121418; --code-bg: #1e2127;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; background: var(--bg); color: var(--text);
+      font-family: "Noto Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: 17px; line-height: 1.65;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+    .narrow { max-width: 820px; margin: 0 auto; }
+
+    /* Hero */
+    header.hero { padding: 64px 0 28px; text-align: center; }
+    .hero h1 {
+      font-family: "Google Sans", "Noto Sans", sans-serif; font-weight: 700;
+      font-size: clamp(2.1rem, 5vw, 3.2rem); line-height: 1.15; margin: 0 0 10px;
+      letter-spacing: -0.01em;
+    }
+    .hero h1 .spike { color: var(--accent); }
+    .hero .subtitle {
+      font-family: "Google Sans", "Noto Sans", sans-serif; font-weight: 500;
+      font-size: clamp(1.1rem, 2.6vw, 1.45rem); color: var(--muted); margin: 0 auto 22px; max-width: 760px; line-height: 1.35;
+    }
+    .authors { font-size: 1.12rem; margin: 0 0 4px; }
+    .authors span { display: inline-block; margin: 0 10px; }
+    .affil { color: var(--muted); font-size: 0.98rem; margin: 0 0 6px; }
+    .venue { color: var(--muted); font-size: 0.98rem; margin: 0 0 22px; }
+    .buttons { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px; border-radius: 999px;
+      background: var(--btn); color: var(--btn-text); font-weight: 500; font-size: 0.98rem;
+    }
+    .btn:hover { text-decoration: none; opacity: 0.88; }
+    .btn svg { width: 18px; height: 18px; fill: currentColor; }
+    .btn.soon { opacity: 0.45; pointer-events: none; }
+
+    /* Teaser */
+    .teaser { margin: 18px 0 8px; }
+    figure { margin: 0; }
+    figure img { width: 100%; height: auto; display: block; border-radius: 6px; background: #fff; }
+    figcaption { color: var(--muted); font-size: 0.93rem; line-height: 1.55; margin-top: 10px; }
+    figcaption b { color: var(--text); }
+
+    .tldr {
+      margin: 30px auto 0; padding: 16px 20px; border-left: 4px solid var(--accent);
+      background: var(--accent-soft); border-radius: 0 8px 8px 0;
+    }
+    .tldr b { color: var(--accent); }
+
+    section { padding: 44px 0 8px; }
+    section.soft { background: var(--bg-soft); padding-bottom: 44px; margin-top: 36px; }
+    h2 {
+      font-family: "Google Sans", "Noto Sans", sans-serif; font-weight: 700; font-size: 1.85rem;
+      text-align: center; margin: 0 0 22px;
+    }
+    h3 {
+      font-family: "Google Sans", "Noto Sans", sans-serif; font-weight: 700; font-size: 1.3rem; margin: 0 0 8px;
+    }
+    .abstract p { text-align: justify; hyphens: auto; }
+
+    /* Findings */
+    .finding { margin: 0 0 56px; }
+    .finding .num {
+      display: inline-block; font-family: "Google Sans", sans-serif; font-weight: 700; color: var(--accent);
+      font-size: 0.9rem; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 4px;
+    }
+    .finding p { margin: 0 0 14px; }
+    .pair { display: grid; grid-template-columns: 1fr 1.35fr; gap: 20px; align-items: start; }
+    .pair .label { font-size: 0.9rem; font-weight: 700; text-align: center; margin-bottom: 6px; }
+    @media (max-width: 680px) { .pair { grid-template-columns: 1fr; } }
+
+    /* Stats strip */
+    .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 8px 0 0; }
+    .stat { text-align: center; padding: 14px 8px; border: 1px solid var(--line); border-radius: 10px; background: var(--bg); }
+    .stat .v { font-family: "Google Sans", sans-serif; font-weight: 700; font-size: 1.9rem; line-height: 1.1; }
+    .stat .k { color: var(--muted); font-size: 0.88rem; }
+    @media (max-width: 680px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+
+    /* Table */
+    .tablewrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+    th, td { padding: 6px 10px; text-align: right; white-space: nowrap; border-bottom: 1px solid var(--line); }
+    th:first-child, td:first-child { text-align: left; }
+    thead th { font-weight: 700; border-bottom: 2px solid var(--text); }
+    thead tr.group th { border-bottom: 1px solid var(--line); text-align: center; }
+    td .zero { color: var(--accent); font-weight: 700; }
+    .note { color: var(--muted); font-size: 0.86rem; margin-top: 8px; }
+
+    /* BibTeX */
+    pre {
+      background: var(--code-bg); border: 1px solid var(--line); border-radius: 8px; padding: 16px;
+      overflow-x: auto; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.85rem; line-height: 1.5; margin: 0;
+    }
+    .bibhead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .copy {
+      border: 1px solid var(--line); background: var(--bg); color: var(--text); border-radius: 6px;
+      padding: 4px 12px; font: inherit; font-size: 0.85rem; cursor: pointer;
+    }
+
+    footer { color: var(--muted); font-size: 0.85rem; text-align: center; padding: 36px 0 48px; }
+    .theme-toggle {
+      position: fixed; top: 14px; right: 14px; border: 1px solid var(--line); background: var(--bg); color: var(--text);
+      border-radius: 999px; width: 38px; height: 38px; cursor: pointer; font-size: 1rem;
+    }
+  </style>
+</head>
+<body>
+<button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">&#9680;</button>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Mind the <span class="spike">Spike</span></h1>
+    <p class="subtitle">Mechanisms and Brittleness of Visual Massive Activations in Large Vision&ndash;Language Models</p>
+    <!-- AUTHORS: fill in after the review period. -->
+    <p class="authors"><span>Author One</span><span>Author Two</span><span>Author Three</span></p>
+    <p class="affil">Affiliation</p>
+    <p class="venue">Under review</p>
+    <div class="buttons">
+      <!-- Replace each href and remove the "soon" class once the link exists. -->
+      <a class="btn soon" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24"><path d="M6 2h9l5 5v15H6V2zm8 1.5V8h4.5L14 3.5zM8 12h8v1.5H8V12zm0 3h8v1.5H8V15zm0 3h5v1.5H8V18z"/></svg>Paper
+      </a>
+      <a class="btn soon" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm3 4v8h2v-3l3 3h2.5l-4-4 4-4H12l-3 3V8H7z"/></svg>arXiv
+      </a>
+      <a class="btn soon" href="#" aria-disabled="true">
+        <svg viewBox="0 0 24 24"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>Code
+      </a>
+      <a class="btn" href="#bibtex">
+        <svg viewBox="0 0 24 24"><path d="M5 3h14v18l-7-4-7 4V3z"/></svg>BibTeX
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <figure class="teaser">
+      <img src="static/images/fig_one_top.png" alt="An image processed by Qwen3-VL-8B. The text token becomes massive at block 6; one sky token abruptly rises at block 16 while a neighbouring sky token stays ordinary.">
+      <figcaption><b>Visual spikes share the text spike's channels but differ in when and where they form.</b>
+        An image processed by Qwen3-VL-8B, with two sky patches marked in red and blue.
+        The text token becomes massive early, at block 6.
+        The red image token starts with an ordinary activation, which abruptly rises at block 16.
+        The blue token, from the same sky background, stays non-massive.</figcaption>
+    </figure>
+
+    <div class="tldr narrow">
+      <b>TL;DR.</b> We explain how visual massive activations form in LVLMs, through an inherited switch and its trigger direction
+      that image tokens reach in 10 of 25 models, and show their extreme brittleness: a 1/255 image perturbation creates or
+      removes them, and removing the trigger component prevents them.
+    </div>
+  </div>
+
+  <section class="soft">
+    <div class="wrap">
+      <div class="narrow">
+        <div class="stats">
+          <div class="stat"><div class="v">25</div><div class="k">adapter-based LVLMs</div></div>
+          <div class="stat"><div class="v">18</div><div class="k">text-only bases</div></div>
+          <div class="stat"><div class="v">10</div><div class="k">model families</div></div>
+          <div class="stat"><div class="v">2B&ndash;72B</div><div class="k">parameters</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="abstract">
+    <div class="wrap narrow">
+      <h2>Abstract</h2>
+      <p>Large vision&ndash;language models (LVLMs) inherit massive activations from their text-only bases: spikes where a few fixed
+        hidden channels receive values thousands of times above the typical magnitude. The text spike systematically appears in
+        early layers at a fixed initial position, independently of input content. Visual spikes vary across images, but whether
+        their formation follows a consistent pattern across LVLMs and how they respond to image perturbations remain open
+        questions. We find that some LVLMs do not form visual spikes, while others spike at different rates, typically in deeper
+        layers. We identify the trigger direction from model weights and an interpretable location rule: before the language
+        model decoder runs, eventual spike tokens are largely restricted to those sharing least with the rest of the image.
+        Crucially, visual spikes are strikingly brittle. Common corruptions frequently create and relocate spikes, and less often
+        remove them, raising overall incidence. Our trigger-guided spike attack deliberately creates or removes spikes under a
+        small &ell;<sub>&infin;</sub> budget, with 1/255 enough in nine of the ten models that spike. Finally, our preventive
+        intervention removes only the trigger component before spikes erupt, eliminating or substantially reducing spikes on clean
+        and perturbed images while leaving the other image tokens nearly unchanged. Our study spans 25 adapter-based LVLMs built on
+        18 released text-only bases from 10 families, ranging from 2B to 72B parameters.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Findings</h2>
+
+      <div class="finding">
+        <span class="num">1 &middot; Not every LVLM spikes</span>
+        <h3>Ten models form visual spikes and fifteen do not</h3>
+        <div class="narrow">
+          <p>Under the original massive-activation criterion, ten of the 25 LVLMs form visual spikes at different rates, and fifteen
+            do not. The commonly used visual-spike definition obscures this division, because it flags most image tokens in nearly
+            every model. Independently measured attention sinks largely track the original criterion.</p>
+        </div>
+        <figure>
+          <img src="static/images/fig_criteria_roster.png" alt="Left: share of image tokens passing the common threshold per model. Right: fraction of images that spike under the original criterion, beside attention-sink incidence.">
+          <figcaption><b>The common definition flags most image tokens in nearly every LVLM, the original flags spikes in only ten, and
+            attention sinks largely track the original.</b> Left, the mean share of image tokens passing the common threshold over
+            300 images per model. Right, the fraction of images that spike under the original criterion, beside attention-sink
+            incidence.</figcaption>
+        </figure>
+      </div>
+
+      <div class="finding">
+        <span class="num">2 &middot; Mechanism</span>
+        <h3>A visual switch and its trigger direction</h3>
+        <div class="narrow">
+          <p>Image tokens reach a block that produces the spike, the <em>visual switch</em>, under some visual adaptations and not
+            others. This block typically sits deeper than the text switch. Inputs sufficiently aligned with a trigger direction
+            cause the block to produce a spike. We formulate this direction from the block's weights and estimate it while
+            retaining the full nonlinearity, which recovers the quadratic eigendirection of Sun et al. as a special
+            approximation. The text spike, by contrast, is gated by the norm alone. The visual spike also depends on the text
+            spike's attention sink: blocking the eventual spike token's attention to the text spike token suppresses the visual
+            spike on 75 to 100% of images.</p>
+        </div>
+        <figure>
+          <img src="static/images/fig_switch_four.png" alt="Spike-channel magnitude across hidden states for four LVLMs: two non-spiking and two spiking, where one image token jumps at a single block.">
+          <figcaption><b>A visual switch writes the spike in only some LVLMs.</b> The spike-channel magnitude across hidden states,
+            on a log scale, for four LVLMs with one image each. Grey lines are image tokens and the dash-dot line is the text spike
+            token. Blue is the largest image token in two non-spiking models, and red the spike token in two spiking ones.</figcaption>
+        </figure>
+      </div>
+
+      <div class="finding">
+        <span class="num">3 &middot; Location</span>
+        <h3>Spike tokens are the least-shared image tokens</h3>
+        <div class="narrow">
+          <p>Before the decoder runs, eventual spike tokens are already largely restricted to those sharing least with the rest of
+            the image. This rule predicts later alignment with the trigger, and it is finer than the background preference
+            reported in earlier work. Scaling down the tokens of a region as small as a tenth of the image lowers their shared part
+            and norm, and draws the spike into that region.</p>
+        </div>
+        <div class="pair">
+          <figure>
+            <div class="label">Predicting the spike token</div>
+            <img src="static/images/fig_locator_roc.png" alt="Share of spike tokens found against the share of other tokens ranked above them, using the shared part, the norm or the direction.">
+          </figure>
+          <figure>
+            <div class="label">Relocating through 10% of the tokens</div>
+            <img src="static/images/fig_positions_one.png" alt="Two images under InternVL3.5-8B with the same 5 by 5 block placed at three locations; the spike moves into the edited block.">
+          </figure>
+        </div>
+        <figcaption><b>Eventual spike tokens lie among the least-shared tokens, and editing a small region can relocate the spike.</b>
+          Left, for each spike token, the share of its image's other tokens ranked above it against the share of spike tokens found,
+          using the shared part, the norm or the direction at the decoder's input. Right, two images under InternVL3.5-8B with the
+          same 5&times;5 block placed at three locations. Red marks the resulting spike, amber the clean spike, and blue outlines the
+          edited block.</figcaption>
+      </div>
+
+      <div class="finding">
+        <span class="num">4 &middot; Brittleness</span>
+        <h3>A 1/255 perturbation creates or removes spikes</h3>
+        <div class="narrow">
+          <p>Common corruptions create and move spikes more often than they remove them, which raises the fraction of images that
+            spike. Even when incidence stays stable, the token that spikes can change. Our <em>spike attack</em> uses the estimated
+            trigger to create or remove spikes. An &ell;<sub>&infin;</sub> budget of 1/255 is enough in nine of the ten spiking
+            models, while yes/no answers stay unchanged on 93 to 100% of attempts. This internal brittleness does not show in the
+            model's answers alone.</p>
+        </div>
+        <figure>
+          <img src="static/images/fig_brittleness.png" alt="Left: rates at which six corruptions create, remove or relocate spikes across ten models. Right: one VQAv2 image under InternVL3.5-14B where a 1/255 perturbation raises the peak ratio from 204 to 19,628.">
+          <figcaption><b>Visual spikes are brittle to image changes, even when the answer stays the same.</b> (a) Across ten spiking
+            models and six corruptions, the forwards on which the corruption creates a spike, removes one, or relocates it.
+            (b, c) One VQAv2 image under InternVL3.5-14B, where a trigger-guided perturbation bounded by 1/255 raises the peak
+            ratio from 204 to 19,628 without changing the answer.</figcaption>
+        </figure>
+      </div>
+
+      <div class="finding">
+        <span class="num">5 &middot; Intervention</span>
+        <h3>Removing the trigger component prevents the spike</h3>
+        <div class="narrow">
+          <p>Existing interventions on massive activations act after the write. Ours removes the trigger component from the input
+            that the visual switch's feed-forward reads, with no token deletion and no weight change. It eliminates spikes on clean
+            images in six of the ten models and reduces them on perturbed images. It preserves the switch's write on ordinary
+            tokens and, in eight of the ten, the model's outputs.</p>
+        </div>
+        <div class="tablewrap">
+          <table>
+            <thead>
+              <tr class="group"><th></th><th colspan="3">Images that spike, before &rarr; after (%)</th><th colspan="2">Task-score change</th></tr>
+              <tr><th>LVLM</th><th>Clean</th><th>Corrupted</th><th>Attacked</th><th>&Delta;VQA (pts)</th><th>&Delta;CIDEr</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Qwen2.5-VL-32B</td><td>49.0 &rarr; <span class="zero">0.0</span></td><td>90.0 &rarr; <span class="zero">0.0</span></td><td>100.0 &rarr; <span class="zero">0.0</span></td><td>+0.0</td><td>&minus;0.007</td></tr>
+              <tr><td>Qwen3-VL-4B</td><td>71.0 &rarr; <span class="zero">0.0</span></td><td>89.7 &rarr; <span class="zero">0.0</span></td><td>95.0 &rarr; <span class="zero">0.0</span></td><td>&minus;0.6</td><td>+0.003</td></tr>
+              <tr><td>InternVL3.5-4B</td><td>16.0 &rarr; 3.0</td><td>42.0 &rarr; 11.3</td><td>80.0 &rarr; 27.5</td><td>&minus;0.4</td><td>+0.010</td></tr>
+              <tr><td>Qwen3-VL-8B</td><td>9.0 &rarr; <span class="zero">0.0</span></td><td>53.0 &rarr; <span class="zero">0.0</span></td><td>82.5 &rarr; <span class="zero">0.0</span></td><td>+0.1</td><td>+0.008</td></tr>
+              <tr><td>InternVL3.5-8B</td><td>59.5 &rarr; 32.5</td><td>86.7 &rarr; 62.0</td><td>100.0 &rarr; 52.5</td><td>+0.0</td><td>+0.000</td></tr>
+              <tr><td>Molmo2-8B</td><td>100.0 &rarr; 45.5</td><td>100.0 &rarr; 53.3</td><td>n/a*</td><td>&minus;0.3</td><td>+0.008</td></tr>
+              <tr><td>InternVL3.5-14B</td><td>61.0 &rarr; 16.5</td><td>84.3 &rarr; 17.0</td><td>100.0 &rarr; 30.0</td><td>+0.2</td><td>&minus;0.001</td></tr>
+              <tr><td>Qwen3-VL-32B</td><td>35.0 &rarr; <span class="zero">0.0</span></td><td>60.3 &rarr; <span class="zero">0.0</span></td><td>92.5 &rarr; <span class="zero">0.0</span></td><td>+0.0</td><td>+0.000</td></tr>
+              <tr><td>InternVL3.5-38B</td><td>4.5 &rarr; <span class="zero">0.0</span></td><td>34.3 &rarr; 0.3</td><td>52.5 &rarr; <span class="zero">0.0</span></td><td>+0.0</td><td>&minus;0.005</td></tr>
+              <tr><td>Pixtral-12B</td><td>100.0 &rarr; <span class="zero">0.0</span></td><td>99.7 &rarr; <span class="zero">0.0</span></td><td>n/a*</td><td>+2.6</td><td>+0.158</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">Clean POPE uses 200 questions per model. Corrupted is the mean over six operators on 50 questions each.
+          Attacked uses 40 saved creation-attack images. Score changes are intervention minus original on 297 VQAv2 questions and
+          300 COCO captions. *Molmo2-8B and Pixtral-12B spike on nearly every clean image, so no attack creates a spike to prevent.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="bibtex">
+    <div class="wrap narrow">
+      <div class="bibhead"><h2 style="margin:0">BibTeX</h2><button class="copy" id="copyBib">Copy</button></div>
+      <pre id="bib">@article{mindthespike2026,
+  title   = {Mind the Spike: Mechanisms and Brittleness of Visual Massive
+             Activations in Large Vision--Language Models},
+  author  = {Author One and Author Two and Author Three},
+  journal = {arXiv preprint arXiv:XXXX.XXXXX},
+  year    = {2026}
+}</pre>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">This page layout follows the <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> project page template, licensed under CC BY-SA 4.0.</div>
+</footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    try { var saved = localStorage.getItem("theme"); if (saved) root.setAttribute("data-theme", saved); } catch (e) {}
+    document.getElementById("themeToggle").addEventListener("click", function () {
+      var dark = root.getAttribute("data-theme") === "dark" ||
+        (!root.getAttribute("data-theme") && window.matchMedia("(prefers-color-scheme: dark)").matches);
+      var next = dark ? "light" : "dark";
+      root.setAttribute("data-theme", next);
+      try { localStorage.setItem("theme", next); } catch (e) {}
+    });
+    document.getElementById("copyBib").addEventListener("click", function () {
+      var btn = this;
+      navigator.clipboard.writeText(document.getElementById("bib").textContent).then(function () {
+        btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+      });
+    });
+  })();
+</script>
+</body>
+</html>
