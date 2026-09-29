@@ -2,7 +2,7 @@
 title: "A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy"
 authors: "M. Heuillet, R. Bhagwatkar, J. Ngnawé, Y. Pequignot, A. Larouche, C. Gagné, I. Rish, O. Ahmad, A. Durand"
 collection: publications
-category: arxiv
+category: workshops
 permalink: /publication/2025-08-12-robust-generalization-guide
 excerpt: 'This work presents the most comprehensive benchmark of robust fine-tuning to date, revealing how architecture, pretraining, and adaptation choices impact robust generalization across diverse datasets, perturbations, and training protocols.'
 header:
