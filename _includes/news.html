@@ -8,7 +8,15 @@
       <div class="news__content">
         {{ item.body | markdownify }}
 
-        {% if item.image %}
+        {% if item.images %}
+          <div class="news__media news__media--gallery">
+            {% for photo in item.images %}
+              {% if item.url %}<a href="{{ item.url }}">{% endif %}
+                <img src="{{ photo.image | prepend: '/images/' | prepend: base_path }}" alt="{{ photo.alt }}" loading="lazy">
+              {% if item.url %}</a>{% endif %}
+            {% endfor %}
+          </div>
+        {% elsif item.image %}
           {% if item.image contains "://" %}
             {% capture news_img %}{{ item.image }}{% endcapture %}
           {% else %}

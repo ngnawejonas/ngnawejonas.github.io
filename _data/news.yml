@@ -24,8 +24,13 @@
     Excited to join Stanford University this Fall 2025 as a
     [Visiting Student Researcher](https://stairlab.stanford.edu/members/jonas_ngnawe.html)
     at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
-  image: news/stanford-2025.jpg
-  alt: "Jonas Ngnawé on the Stanford University campus, with the Main Quad and Hoover Tower in the background."
+  images:
+    - image: news/stanford-2025.jpg
+      alt: "Jonas Ngnawé on the Stanford campus, with the Main Quad and Hoover Tower in the background."
+    - image: news/stanford-quad.jpg
+      alt: "Jonas Ngnawé wearing a Stanford sweatshirt beneath the Main Quad arches."
+    - image: news/stanford-computer-science.jpg
+      alt: "Entrance to Stanford's William Gates Computer Science building."
   url: "https://stairlab.stanford.edu/members/jonas_ngnawe.html"
 
 - date: "Dec 2024"

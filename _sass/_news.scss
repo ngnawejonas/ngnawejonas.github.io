@@ -80,4 +80,24 @@
     border: 1px solid var(--theme-border);
     border-radius: $border-radius;
   }
+
+  &--gallery {
+    display: grid;
+    grid-template-columns: 3fr 4fr 3fr;
+    gap: 6px;
+    aspect-ratio: 16 / 9;
+
+    a {
+      min-width: 0;
+      min-height: 0;
+    }
+
+    img {
+      height: 100%;
+      aspect-ratio: auto;
+      object-fit: cover;
+      background-color: transparent;
+      border: 0;
+    }
+  }
 }
