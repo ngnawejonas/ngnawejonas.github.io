@@ -3,6 +3,8 @@ title: "Mind the Spike: Mechanisms and Brittleness of Visual Massive Activations
 authors: "J. Ngnawé, Y. Pequignot, S. Sahoo, C. Gagné, F. Precioso, S. Koyejo"
 collection: publications
 category: arxiv
+header:
+  teaser: publications/mind-the-spike-thumb.png
 permalink: /publication/2026-09-26-mind-the-spike
 excerpt: 'We study how visual activation spikes form in large vision–language models, their sensitivity to image perturbations, and an intervention that suppresses them.'
 date: 2026-09-26

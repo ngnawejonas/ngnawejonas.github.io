@@ -3,6 +3,8 @@ title: "A Stochastic–Geometric Theory of Scaling Laws in Grokking"
 authors: "R. Luo, C. Gagné, J. Ngnawé, I. Ullah, K. Morrissey"
 collection: publications
 category: arxiv
+header:
+  teaser: publications/grokking-scaling-laws-thumb.png
 permalink: /publication/2026-06-29-grokking-scaling-laws
 excerpt: 'A theory connecting the geometry of optimization trajectories to delayed generalization, with grokking scaling laws for learning rate, batch size, and regularization.'
 date: 2026-06-29
