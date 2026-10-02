@@ -15,7 +15,7 @@ Education
 ======
 * **PhD in Computer Science** (Fall 2021 - Ongoing)
     * [Mila](https://mila.quebec/en/directory/jonas-ngnawe) and [Intelligence and Data Institute (IID)](https://iid.ulaval.ca/), Laval University, Quebec
-    * [Visiting Student Researcher at Stanford University](https://profiles.stanford.edu/jonas-ngnawe)
+    * [Visiting PhD student at Stanford University](https://stairlab.stanford.edu/members/jonas_ngnawe.html)
     * Focus: Adversarial Robustness, Distribution Shifts and Uncertainty of Deep Learning Models
     * Research: [Jonas Ngnawé - Google Scholar](https://scholar.google.com/citations?user=KwAxSFsAAAAJ&hl=fr)
     * [DEEL project's page](https://deel.quebec/en/projets/axe1-robustesse/projet-2/): DEpendable and Explainable Learning - [DEEL-QUEBEC](https://deel.quebec/) - [DEEL-FRANCE](https://www.deel.ai/)

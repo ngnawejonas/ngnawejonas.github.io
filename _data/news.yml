@@ -22,13 +22,8 @@
 - date: "Sep 2025"
   body: >
     Excited to join Stanford University this Fall 2025 as a
-    [Visiting Student Researcher](https://profiles.stanford.edu/jonas-ngnawe)
+    [Visiting Student Researcher](https://stairlab.stanford.edu/members/jonas_ngnawe.html)
     at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
-
-- date: "Jul 2025"
-  body: >
-    Attending [DLRL 2025](https://dlrl.ca/), the Deep Learning & Reinforcement Learning
-    Summer School in Edmonton!
 
 - date: "Dec 2024"
   body: >
@@ -69,7 +64,7 @@
 
 - date: "2020"
   body: >
-    In the acknowledgments of the book "Mathematics for Machine Learning" by
+    Acknowledged for my contribution to the book "Mathematics for Machine Learning" by
     Prof. Marc Deisenroth — [book website](https://mml-book.github.io/).
   image: news/mml-book.jpg
   alt: "Cover of the book Mathematics for Machine Learning."

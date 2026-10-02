@@ -44,6 +44,9 @@
       {% if post.paperurl and post.paperurl != "" %}
         <a href="{{ post.paperurl }}" class="btn btn--info btn--small">Paper</a>
       {% endif %}
+      {% if post.projecturl and post.projecturl != "" %}
+        <a href="{{ post.projecturl }}" class="btn btn--info btn--small">Project page</a>
+      {% endif %}
       {% if post.slidesurl and post.slidesurl != "" %}
         <a href="{{ post.slidesurl }}" class="btn btn--info btn--small">Slides</a>
       {% endif %}
