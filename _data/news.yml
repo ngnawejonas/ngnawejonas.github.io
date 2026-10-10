@@ -7,6 +7,11 @@
 #   alt   — description of the image for screen readers
 #   url   — optional, makes the image click through
 
+- date: "Oct 2026"
+  body: >
+    [Pre-order a T-shirt from the Mind the Spike collection](https://mind-the-spike-shop.amberapple4.chatgpt.site/),
+    inspired by our new paper [Mind the Spike](/mind-the-spike/)!
+
 - date: "Jan 2026"
   body: >
     Our work [Robust Fine-Tuning with Epsilon-Scheduling](https://openreview.net/forum?id=aIBFTh2ThF)
