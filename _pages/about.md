@@ -9,6 +9,8 @@ redirect_from:
 
 I am a PhD Candidate at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [Université Laval](https://iid.ulaval.ca/en/), and a visiting PhD student at [Stanford University](https://www.stanford.edu/). I work in the area of Adversarial Machine Learning advised by [Prof. Christian Gagné](https://chgagne.github.io/english/) (Mila & Université Laval) and co-advised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/) (INRIA & Université Côte d’Azur), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/). At Stanford I’m part of the [Stanford Trustworthy AI Research group (STAIR)](https://stairlab.stanford.edu/), led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/). I was previously a Google AI resident at the Accra Lab, where I was mentored by [Yann Dauphin](https://www.dauphin.io/).
 
+🌍 *[Research beyond borders](/journey/) — people, places, and ideas.*
+
 Research Interests
 ======
 My research aims to build safe, efficient and trustworthy machine learning systems that are reliable when deployed in the real world. In particular, I work on:
