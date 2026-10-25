@@ -11,7 +11,7 @@ sitemap: false
 <p style="margin-top: 1em;">People · Places · Ideas · Connections · Discoveries.</p>
 
 <a href="/images/research-journey.png" title="Click to view full size">
-  <img src="/images/research-journey.png" alt="World map tracing my research journey through Yaoundé, Limbe, Kigali, London, Nairobi, Accra, Abidjan, Mountain View, Palo Alto, San Francisco, Berkeley, Québec City, Montréal, Vancouver, Edmonton, Toronto, Philadelphia, Nice, Sophia Antipolis, Toulouse, and Zurich." style="width: 100%; border: 1px solid #e0e0e0; border-radius: 6px;">
+  <img src="/images/research-journey.png" alt="World map tracing my research journey through Yaoundé, Limbe, Kigali, London, Nairobi, Accra, Abidjan, Mountain View, Palo Alto, San Francisco, Berkeley, Québec City, Montréal, Vancouver, Edmonton, Toronto, Philadelphia, Rio de Janeiro, Nice, Sophia Antipolis, Toulouse, and Zurich." style="width: 100%; border: 1px solid #e0e0e0; border-radius: 6px;">
 </a>
 
 <p style="font-size: 0.85em; color: #777;">Click the map to view it full size.</p>
