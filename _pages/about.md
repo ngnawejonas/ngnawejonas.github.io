@@ -44,7 +44,7 @@ Projects & Initiatives
 
 <p class="home__more"><a href="/projects/">All projects →</a></p>
 
-More about the path from Yaoundé to here in my [research journey](/journey/).
+🌍 *[Research beyond borders](/journey/) — people, places, and ideas.*
 
 Recent News
 ======
