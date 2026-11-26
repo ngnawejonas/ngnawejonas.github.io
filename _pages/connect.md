@@ -4,7 +4,7 @@ title: "Let's Connect"
 author_profile: true
 ---
 
-Whether you'd like to discuss AI, explore consulting opportunities, collaborate on a project, exchange ideas, hear about my journey, or simply connect, I'd be happy to have a conversation.
+I am open to Research Scientist and Research Engineer opportunities in industry for 2027, and I'm always glad to talk about research collaborations, consulting, or my journey. Book a slot below or write to [{{ site.author.email }}](mailto:{{ site.author.email }}).
 
 **Schedule a 1:1 →**
 

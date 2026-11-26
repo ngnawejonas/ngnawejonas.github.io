@@ -1,24 +1,53 @@
 ---
 permalink: /
-title: "About me"
+title: "About"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I am a PhD Candidate at [Mila-Quebec AI Institute](https://mila.quebec/en/) and [Université Laval](https://iid.ulaval.ca/en/), and a visiting PhD student at [Stanford University](https://www.stanford.edu/). I work in the area of Adversarial Machine Learning advised by [Prof. Christian Gagné](https://chgagne.github.io/english/) (Mila & Université Laval) and co-advised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/) (INRIA & Université Côte d’Azur), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/). At Stanford I’m part of the [Stanford Trustworthy AI Research group (STAIR)](https://stairlab.stanford.edu/), led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/). I was previously a Google AI resident at the Accra Lab, where I was mentored by [Yann Dauphin](https://www.dauphin.io/).
+I am an AI researcher working towards safe, efficient and reliable AI systems. My research focuses on understanding model behaviour, assessing model reliability, and developing methods to improve both. My work has been published at NeurIPS, ICLR and AAAI.
 
-🌍 *[Research beyond borders](/journey/) — people, places, and ideas.*
+I am completing my PhD in Computer Science at [Mila – Quebec AI Institute](https://mila.quebec/en/) and [Université Laval](https://iid.ulaval.ca/en/), advised by [Prof. Christian Gagné](https://chgagne.github.io/english/) and co-advised by [Prof. Frédéric Precioso](https://www.i3s.unice.fr/~precioso/), in close collaboration with [Yann Pequignot](https://www.irif.fr/~pequignot/).
 
-Research Interests
+I am currently a visiting researcher at [Inria](https://www.inria.fr/en), and I work with [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/) of Stanford's [Trustworthy AI Research Lab (STAIR)](https://stairlab.stanford.edu/), where I was a visiting student researcher in 2025–2026. Previously, I was a Machine Learning Associate at the [Vector Institute](https://vectorinstitute.ai/) and an AI Resident at Google Brain.
+
+**I am open to Research Scientist and Research Engineer opportunities in industry for 2027.**
+
+<p class="home__links">
+  <a class="btn btn--info" href="/files/ngnawejonas-resume.pdf"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
+  <a class="btn btn--inverse" href="/connect/"><i class="fas fa-envelope" aria-hidden="true"></i> Get in touch</a>
+</p>
+
+Research
 ======
-My research aims to build safe, efficient and trustworthy machine learning systems that are reliable when deployed in the real world. In particular, I work on:
+* **Understanding AI systems:** mechanistic interpretability, internal representations, learning dynamics
+* **Assessing AI reliability:** uncertainty, brittleness, robustness and failure modes
+* **Improving AI systems:** robust learning, targeted interventions and efficient inference
 
-* **Robustness & Safety:** adversarial robustness, robust fine-tuning, robustness to distribution shifts, and the safety and alignment of foundation models (LLMs/VLMs)
-* **Uncertainty & Data Efficiency:** uncertainty estimation, test-time scaling and adaptation, and active learning
-* **Science of Deep Learning:** understanding training dynamics and generalization, including grokking and emergent behaviours
+{% include selected-research.html %}
 
-Highlights/News
+<p class="home__more"><a href="/publications/">All publications →</a></p>
+
+Highlights
 ======
-{% include news.html %}
+{% include news.html highlight=true %}
+
+Research & Industry Experience
+======
+{% include experience.html %}
+
+Projects & Initiatives
+======
+{% include projects.html home=true %}
+
+<p class="home__more"><a href="/projects/">All projects →</a></p>
+
+More about the path from Yaoundé to here in my [research journey](/journey/).
+
+Recent News
+======
+{% include news.html limit=4 %}
+
+<p class="home__more"><a href="/news/">All news →</a></p>

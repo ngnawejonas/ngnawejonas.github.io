@@ -4,13 +4,17 @@ authors: "J. Ngnawé, M. Heuillet, S. Sahoo, Y. Pequignot, O. Ahmad, A. Durand, 
 collection: publications
 category: conferences
 permalink: /publication/2025-09-27-epsilon-scheduling
-excerpt: 'We study robust fine-tuning (RFT) of non-robust pretrained models and show that robust objectives cause *suboptimal transfer*.  We propose *Epsilon-Scheduling*, which enables optimal transfer and improves *expected robustness*.'
+excerpt: 'Fine-tuning non-robust pretrained models with a robust objective can impede task adaptation early in training and lead to *suboptimal transfer*. *Epsilon-Scheduling*, a schedule over the perturbation strength used during training, prevents it and consistently improves *expected robustness* across six pretrained models and five datasets.'
+selected: 2
+short_title: "Epsilon-Scheduling"
+tagline: "Mitigating suboptimal transfer in robust fine-tuning of non-robust pretrained models by scheduling the adversarial perturbation strength."
 header:
   teaser: publications/epsilon-scheduling-thumb.png
 date: 2026-01-25
 venue: 'ICLR 2026'
 paperurl: 'https://arxiv.org/abs/2509.23325'
-citation: 'Ngnawé, J., Heuillet, M., Sahoo, S., Pequignot, Y., Ahmad, O., Durand, A., Precioso, F., Gagné, C. (2026). Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Epsilon-Scheduling. The Fourteenth International Conference on Learning Representations (ICLR 2026).'
+codeurl: 'https://github.com/ngnawejonas/EpsilonScheduling'
+citation: 'Ngnawé, J., Heuillet, M., Sahoo, S., Pequignot, Y., Ahmad, O., Durand, A., Precioso, F., & Gagné, C. (2026). Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Epsilon-Scheduling. The Fourteenth International Conference on Learning Representations (ICLR 2026).'
 ---
 
 An earlier version of this work appeared at the [NeurIPS 2025 Reliable ML Workshop](https://reliablemlworkshop.github.io/) under the title "Robust Fine-Tuning from Non-Robust Pretrained Models: Mitigating Suboptimal Transfer With Adversarial Scheduling".

@@ -1,0 +1,165 @@
+/* ==========================================================================
+   HOME PAGE AND DATED LISTS
+   Link row under the introduction, and the date-on-the-left list shared by
+   experience and projects. Mirrors the news feed so the page reads as one.
+   ========================================================================== */
+
+.home__links {
+  margin: 1.25em 0 0.5em;
+
+  .btn {
+    margin: 0 0.4em 0.5em 0;
+  }
+}
+
+.home__more {
+  margin-top: 0.75em;
+  font-size: $type-size-6;
+}
+
+.xp {
+  margin-bottom: 1.5em;
+}
+
+.xp__item {
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--theme-border);
+
+  &:last-child {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0;
+  }
+
+  @include breakpoint($medium) {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+.xp__meta {
+  margin-bottom: 0.25em;
+  font-family: $sans-serif-narrow;
+  font-weight: bold;
+  color: var(--theme-text-soft);
+
+  @include breakpoint($medium) {
+    flex: 0 0 9em;
+    margin-bottom: 0;
+    padding-right: 1em;
+  }
+}
+
+.xp__content {
+  min-width: 0;
+
+  @include breakpoint($medium) {
+    flex: 1 1 auto;
+  }
+
+  p {
+    margin: 0 0 0.25em;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.xp__place {
+  margin-left: 0.5em;
+  font-size: $type-size-6;
+  color: var(--theme-text-soft);
+}
+
+/* Selected research: compact two-column figure cards */
+
+.sel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  margin: 1em 0;
+
+  @include breakpoint($medium) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.sel__card {
+  min-width: 0;
+}
+
+.page__content .sel__figure,
+.page__content .sel__title a {
+  text-decoration: none;
+}
+
+.sel__figure {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 9;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid var(--theme-border);
+  border-radius: $border-radius;
+  border-bottom: 1px solid var(--theme-border);
+  text-decoration: none;
+
+  img {
+    width: 100%;
+    height: 100%;
+    /* paper figures vary widely in shape, so contain rather than crop */
+    object-fit: contain;
+  }
+}
+
+.sel__placeholder {
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-4;
+  font-weight: bold;
+  color: #243447;
+  text-decoration: none;
+}
+
+.sel__meta {
+  margin: 0.6em 0 0.1em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-6;
+  font-weight: bold;
+  color: var(--theme-text-soft);
+}
+
+.sel__title {
+  margin: 0 0 0.25em;
+  font-family: $sans-serif-narrow;
+  font-size: $type-size-5;
+  line-height: 1.3;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.sel__tagline {
+  margin: 0 0 0.4em;
+  font-size: $type-size-6;
+}
+
+.sel__links {
+  margin: 0;
+  font-size: $type-size-6;
+
+  a + a::before {
+    content: "·";
+    display: inline-block;
+    margin: 0 0.5em;
+    color: var(--theme-text-soft);
+    text-decoration: none;
+  }
+}

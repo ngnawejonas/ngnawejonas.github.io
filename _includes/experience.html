@@ -1,0 +1,15 @@
+<div class="xp">
+  {% for job in site.data.experience %}
+    <div class="xp__item">
+      <div class="xp__meta">{{ job.dates }}</div>
+      <div class="xp__content">
+        <p class="xp__head">
+          <strong>{{ job.role }}</strong>,
+          {% if job.url %}<a href="{{ job.url }}">{{ job.org }}</a>{% else %}{{ job.org }}{% endif %}
+          <span class="xp__place">{{ job.location }}</span>
+        </p>
+        {{ job.body | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

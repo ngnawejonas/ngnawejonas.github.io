@@ -4,13 +4,13 @@ authors: "J. Ngnawé, M. A. Njifon, J. Heek, Y. Dauphin"
 collection: publications
 category: workshops
 permalink: /publication/2022-10-22-robust-mix
-excerpt: 'An extension of mixup in the frequency domain that regularizes the deep nets for robustness to common corruptions.'
+excerpt: 'An extension of Mixup in the frequency domain that regularizes networks to classify from lower-frequency spatial features, improving robustness on ImageNet-C and Stylized ImageNet at little computational overhead.'
 header:
   teaser: publications/robustmix-thumb.jpg
 date: 2022-10-20
 venue: 'NeurIPS 2022 Workshop on Distribution Shifts'
 paperurl: 'https://arxiv.org/abs/2304.02847'
-citation: 'Ngnawe, J., NJIFON, M. A., Heek, J., and Dauphin, Y. Robustmix: Improving robustness by regularizing the frequency bias of deep nets. In NeurIPS 2022 Workshop on Distribution Shifts: Connecting Methods and Applications, 2022. URL https://openreview.net/forum?id=Na64z0YpOx.'
+citation: 'Ngnawé, J., Njifon, M. A., Heek, J., & Dauphin, Y. (2022). Robustmix: Improving Robustness by Regularizing the Frequency Bias of Deep Nets. NeurIPS 2022 Workshop on Distribution Shifts: Connecting Methods and Applications. https://openreview.net/forum?id=Na64z0YpOx'
 ---
 
 <figure>

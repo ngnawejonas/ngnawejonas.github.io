@@ -1,0 +1,21 @@
+{% comment %}
+  Lists entries from _data/projects.yml.
+    home=true   — only entries flagged `home: true`, ungrouped (home page)
+    group="..." — only entries of that group
+{% endcomment %}
+<div class="xp">
+  {% for project in site.data.projects %}
+    {% if include.home and project.home != true %}{% continue %}{% endif %}
+    {% if include.group and project.group != include.group %}{% continue %}{% endif %}
+    <div class="xp__item">
+      <div class="xp__meta">{{ project.dates }}</div>
+      <div class="xp__content">
+        <p class="xp__head">
+          <strong>{% if project.url %}<a href="{{ project.url }}">{{ project.title }}</a>{% else %}{{ project.title }}{% endif %}</strong>
+          {% if project.role %}<span class="xp__place">{{ project.role }}</span>{% endif %}
+        </p>
+        {{ project.body | markdownify }}
+      </div>
+    </div>
+  {% endfor %}
+</div>

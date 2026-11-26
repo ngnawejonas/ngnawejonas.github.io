@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Jonas Ngnawé"
 title_separator          : "-"
 name                     : &name "Jonas Ngnawé"
-description              : &description "Jonas Ngnawé — PhD candidate at Mila-Quebec AI Institute and Université Laval, working on trustworthy AI: adversarial robustness, robust fine-tuning, and LLM/VLM safety."
+description              : &description "Jonas Ngnawé — AI researcher working towards safe, efficient and reliable AI. PhD candidate at Mila and Université Laval; research on mechanistic interpretability of vision–language models, adversarial robustness, reliability assessment and learning dynamics."
 url                      : https://ngnawejonas.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ngnawejonas/ngnawejonas.github.io"
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.jpg"
   name             : "Jonas Ngnawé"
   pronouns         : # example: "she/her"  
-  bio              : "PhD Candidate in Computer Science at Université Laval and Mila-Quebec AI Institute"
-  location         : "Quebec, Canada"
-  employer         : "Université Laval and Mila"
+  bio              : "AI Researcher | Safe, Efficient & Reliable AI"
+  location         : "Québec City, Canada"
+  employer         : "Mila · Université Laval"
   uri              : # URL
   email            : "ngnawejonas@gmail.com" 
 
@@ -171,6 +171,12 @@ exclude:
   - assets/js/_main.js
   - assets/js/plugins
   - assets/js/vendor
+  - bin
+  - CONTRIBUTING.md
+  - markdown_generator
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
   - CHANGELOG
   - Capfile
   - config
@@ -305,6 +311,7 @@ plugins:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 
@@ -313,6 +320,7 @@ whitelist:
   - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
+  - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
 

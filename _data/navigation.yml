@@ -3,16 +3,24 @@
 # Changing the order here will adjust the order and you can also add additional
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
+#
+# The site title on the left of the masthead already links home.
 
 main:
-  - title: "CV"
-    url: /files/ngnawejonas-resume.pdf
-
   - title: "Publications"
     url: /publications/
+
+  - title: "Projects"
+    url: /projects/
 
   - title: "Talks"
     url: /talks/
 
+  - title: "Research Journey"
+    url: /journey/
+
+  - title: "CV"
+    url: /files/ngnawejonas-resume.pdf
+
   - title: "Connect"
-    url: /connect/    
+    url: /connect/

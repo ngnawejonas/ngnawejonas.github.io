@@ -6,11 +6,37 @@
 #   image — file under /images/, shown directly beneath that entry
 #   alt   — description of the image for screen readers
 #   url   — optional, makes the image click through
+#   highlight — true to feature the entry, with its picture, under Highlights on the home page
+#
+# The home page shows the highlighted entries and the first four entries; /news/ shows all of them.
 
-- date: "Oct 2026"
+- date: "Dec 2026"
+  body: |
+    Upcoming — two papers to be presented at NeurIPS 2026:
+
+    - [RobustGenBench](/publication/2026-robustgenbench), accepted to the Evaluations and Datasets Track
+    - [Margin-based Progress Measures for Grokking](/publication/2026-12-13-margin-grokking-workshop), at the
+      [Neural Network Artifacts as a New Data Modality](https://neurips.cc/virtual/2026/workshop/137631) workshop
+
+- date: "Nov 2026"
   body: >
-    [Pre-order a T-shirt from the Mind the Spike collection](https://mind-the-spike-shop.amberapple4.chatgpt.site/),
-    inspired by our new paper [Mind the Spike](/mind-the-spike/)!
+    Joined [Inria](https://www.inria.fr/en) (Nice / Sophia Antipolis) as a visiting researcher, working on
+    reliable and efficient large vision–language models.
+
+- date: "Sep 2026"
+  body: >
+    New preprint: [Mind the Spike](/publication/2026-09-26-mind-the-spike), on the mechanisms and
+    brittleness of visual massive activations in large vision–language models —
+    [project page](/mind-the-spike/), [arXiv](https://arxiv.org/abs/2609.32808).
+
+- date: "Aug 2026"
+  body: >
+    Completed a Machine Learning Associate term at the [Vector Institute](https://vectorinstitute.ai/)
+    in Toronto, optimizing LLM inference serving.
+
+- date: "Jun 2026"
+  body: >
+    New preprint: [A Stochastic–Geometric Theory of Scaling Laws in Grokking](https://arxiv.org/abs/2606.30388).
 
 - date: "Jan 2026"
   body: >
@@ -25,10 +51,11 @@
     - [A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy](https://arxiv.org/abs/2508.14079)
 
 - date: "Sep 2025"
+  highlight: true
   body: >
-    Excited to join Stanford University this Fall 2025 as a
+    Joined Stanford University for Fall 2025 – Winter 2026 as a
     [Visiting Student Researcher](https://stairlab.stanford.edu/members/jonas_ngnawe.html)
-    at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/)!
+    at the STAIR Lab led by [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/).
   images:
     - image: news/stanford-2025.jpg
       alt: "Jonas Ngnawé on the Stanford campus, with the Main Quad and Hoover Tower in the background."
@@ -39,6 +66,7 @@
   url: "https://stairlab.stanford.edu/members/jonas_ngnawe.html"
 
 - date: "Dec 2024"
+  highlight: true
   body: >
     Panelist for the [8th Annual Black in AI Workshop at NeurIPS](https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop)
     around the theme “AI Regulation & Fairness in the Generative AI Era.”
@@ -47,6 +75,7 @@
   url: "https://www.linkedin.com/posts/blackinai_rsvp-for-the-8th-annual-black-in-ai-workshop-activity-7264699464093696000-UUfg?utm_source=share&utm_medium=member_desktop"
 
 - date: "Dec 2024"
+  highlight: true
   body: >
     Winner of the Neptune.ai NeurIPS 2024 Paper Communication Challenge, explaining
     *Margin Consistency* at three levels — from 1st grader to researcher:
@@ -56,6 +85,7 @@
   url: "https://youtu.be/bZ-m1lOOS70"
 
 - date: "Nov 2024"
+  highlight: true
   body: >
     Won a [best poster award](https://www.linkedin.com/posts/iid-ulaval_f%C3%A9licitations-aux-gagnantes-et-gagnants-du-activity-7261740406772568064-l7nk?utm_source=share&utm_medium=member_desktop)
     at the ["1ère Journée scientifique de l'IID"](https://web.iid.ulaval.ca/post/retour-sur-la-premi%C3%A8re-journ%C3%A9e-scientifique-de-l-institut-intelligence-et-donn%C3%A9es)!

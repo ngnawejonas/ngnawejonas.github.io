@@ -1,15 +1,20 @@
 ---
-title: "Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers."
+title: "Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers"
 authors: "J. Ngnawé, S. Sahoo, Y. Pequignot, F. Precioso, C. Gagné"
 collection: publications
 category: conferences
 permalink: /publication/2024-11-01-margin-consistency
-excerpt: 'A novel property of deep robust classifiers that allows to use the logit margin as a proxy score for input margin and efficiently detect non-robust samples, vulnerable to adversarial attacks.'
+excerpt: 'In margin-consistent robust classifiers, the cheap logit margin preserves the ordering of the intractable input-space margin. Non-robust samples can then be detected without running an adversarial attack on each input, and robust accuracy on a large test set can be estimated from input margins computed on a small subset.'
+selected: 3
+short_title: "Margin Consistency"
+tagline: "Detecting brittle predictions in robust classifiers using logit margins, without running adversarial attacks."
 header:
   teaser: publications/margin-consistency-thumb.png
 date: 2024-11-01
 venue: 'NeurIPS 2024'
-slidesurl: 'http://ngnawejonas.github.io/files/Margin_Consistency_slides.pdf'
+slidesurl: 'https://ngnawejonas.github.io/files/Margin_Consistency_slides.pdf'
+codeurl: 'https://github.com/ngnawejonas/margin-consistency'
+videourl: 'https://youtu.be/bZ-m1lOOS70'
 paperurl: 'https://proceedings.neurips.cc/paper_files/paper/2024/hash/29753d93c5fc11167567e5df800308ae-Abstract-Conference.html'
 citation: 'Ngnawé, J., Sahoo, S., Pequignot, Y., Precioso, F., & Gagné, C. (2024). Detecting Brittle Decisions for Free: Leveraging Margin Consistency in Deep Robust Classifiers. The Thirty-eighth Annual Conference on Neural Information Processing Systems.'
 ---

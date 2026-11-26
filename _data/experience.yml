@@ -1,0 +1,50 @@
+# Research & industry experience, newest first. Shown on the home page and on /cv/.
+# Keep this in step with the résumé PDF in /files/.
+#
+#   org, url — organisation and its link
+#   role     — exact role title
+#   dates    — free text
+#   location — city, country
+#   body     — markdown, one or two sentences on the concrete work
+
+- org: "Inria"
+  url: "https://www.inria.fr/en"
+  role: "Visiting Researcher"
+  dates: "Nov 2026 – present"
+  location: "Nice / Sophia Antipolis, France"
+  body: >
+    Reliable and efficient large vision–language models.
+
+- org: "Vector Institute"
+  url: "https://vectorinstitute.ai/"
+  role: "Machine Learning Associate"
+  dates: "May – Aug 2026"
+  location: "Toronto, Canada"
+  body: >
+    Optimized LLM inference serving for AutoInference.ai: tuned the vLLM serving configuration
+    to increase goodput and reduce latency.
+
+- org: "Stanford University (SAIL · STAIR Lab)"
+  url: "https://stairlab.stanford.edu/members/jonas_ngnawe.html"
+  role: "Visiting Student Researcher"
+  dates: "Oct 2025 – Mar 2026"
+  location: "Palo Alto, USA"
+  body: >
+    Safety, robustness and uncertainty estimation in multimodal vision–language models,
+    with [Prof. Sanmi Koyejo](https://cs.stanford.edu/~sanmi/).
+
+- org: "Mila · Université Laval"
+  url: "https://mila.quebec/en/directory/jonas-ngnawe"
+  role: "PhD Candidate"
+  dates: "2021 – present"
+  location: "Québec City, Canada"
+  body: >
+    Adversarial robustness, robust fine-tuning, reliability assessment and learning dynamics.
+
+- org: "Google Brain"
+  role: "Google AI Resident"
+  dates: "Oct 2019 – Sep 2021"
+  location: "Accra, Ghana"
+  body: >
+    Robust training methods ([Robustmix](/publication/2022-10-22-robust-mix)) and model compression
+    through pruning and mixed-precision quantization, mentored by [Yann Dauphin](https://www.dauphin.io/).

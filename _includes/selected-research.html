@@ -1,0 +1,34 @@
+{% include base_path %}
+{% comment %}
+  Compact grid of the publications flagged `selected: <order>` in their front
+  matter. Each card uses `short_title` and `tagline`; the full entry lives on
+  the Publications page.
+{% endcomment %}
+{% assign selected = site.publications | where_exp: "pub", "pub.selected" | sort: "selected" %}
+<div class="sel">
+  {% for post in selected %}
+    {% assign teaser = post.header.teaser %}
+    {% assign first = post.authors | slice: 0, 9 %}
+    <article class="sel__card">
+      <a class="sel__figure" href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true">
+        {% if teaser %}
+          <img src="{{ teaser | prepend: "/images/" | prepend: base_path }}" loading="lazy" alt="">
+        {% else %}
+          <span class="sel__placeholder">{{ post.short_title | default: post.title }}</span>
+        {% endif %}
+      </a>
+      {% assign sel_venue = post.venue | split: "," | first %}
+      {% if post.venue contains "Preprint" %}{% assign sel_venue = post.date | date: "%Y" | prepend: "Preprint " %}{% endif %}
+      <p class="sel__meta">{{ sel_venue }}{% if first == "J. Ngnawé" %} · First author{% endif %}</p>
+      <h3 class="sel__title"><a href="{{ base_path }}{{ post.url }}">{{ post.short_title | default: post.title }}</a></h3>
+      <p class="sel__tagline">{{ post.tagline | default: post.excerpt }}</p>
+      <p class="sel__links">
+        {% if post.paperurl and post.paperurl != "" %}<a href="{{ post.paperurl }}">Paper</a>{% endif %}
+        {% if post.posterurl and post.posterurl != "" %}<a href="{{ post.posterurl }}">NeurIPS page</a>{% endif %}
+        {% if post.projecturl and post.projecturl != "" %}<a href="{{ post.projecturl }}">Project</a>{% endif %}
+        {% if post.codeurl and post.codeurl != "" %}<a href="{{ post.codeurl }}">Code</a>{% endif %}
+        {% if post.videourl and post.videourl != "" %}<a href="{{ post.videourl }}">Video</a>{% endif %}
+      </p>
+    </article>
+  {% endfor %}
+</div>

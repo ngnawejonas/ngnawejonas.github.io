@@ -1,0 +1,92 @@
+# Projects & initiatives, shown on /projects/ (all) and on the home page
+# (entries with `home: true`).
+#
+#   title, url — name and link (only link things that are public)
+#   role       — your role, short
+#   dates      — free text
+#   group      — "Engineering" | "Initiatives" | "Research software" | "Community"
+#   body       — markdown, one or two sentences
+
+- title: "LLM Inference Optimization"
+  role: "Machine Learning Associate, Vector Institute"
+  dates: "2026"
+  group: "Engineering"
+  body: >
+    Optimizing large language model serving with vLLM for AutoInference.ai, focusing on throughput,
+    latency and goodput under varying workload conditions.
+
+- title: "Mind the Spike — project page"
+  url: "/mind-the-spike/"
+  role: "First author"
+  dates: "2026"
+  group: "Research software"
+  body: >
+    Interactive companion to the paper on visual massive activations in large vision–language
+    models: figures, a video overview and BibTeX.
+
+- title: "Epsilon-Scheduling"
+  url: "https://github.com/ngnawejonas/EpsilonScheduling"
+  role: "First author"
+  dates: "2026"
+  group: "Research software"
+  body: >
+    Pipeline to reproduce the training, evaluation and figures of the ICLR 2026 paper on robust
+    fine-tuning from non-robust pretrained models.
+
+- title: "Margin Consistency"
+  url: "https://github.com/ngnawejonas/margin-consistency"
+  role: "First author"
+  dates: "2024"
+  group: "Research software"
+  body: >
+    Code for the NeurIPS 2024 paper: input-margin estimation with several attacks and the analysis
+    linking it to the logit margin.
+
+- title: "The Human Words We Give Machines"
+  url: "https://ngnawejonas.github.io/ai-anthropomorphism-dictionary/"
+  role: "Author"
+  dates: "2026"
+  group: "Initiatives"
+  home: true
+  body: >
+    A searchable, living dictionary of anthropomorphisms in artificial intelligence. [Source](https://github.com/ngnawejonas/ai-anthropomorphism-dictionary).
+
+- title: "WellMum"
+  url: "https://wellmum.app/en"
+  group: "Initiatives"
+  body: >
+    A postpartum wellness app for mothers, available on iOS and Android. My contributions include
+    conversational AI coaching, food recognition, personalized wellness recommendations and the
+    supporting AI infrastructure.
+
+- title: "Kmer-AI"
+  url: "https://kmer-ai.org/"
+  role: "Co-founder; host of KmerAI Talks"
+  dates: "Since 2020"
+  group: "Community"
+  home: true
+  body: >
+    Association promoting AI and machine learning in Cameroon. I host the
+    [KmerAI Talks](https://kmer-ai.org/kmeraitalks.html) series.
+
+- title: "Machine Learning Projects Competition (MLPC)"
+  role: "Co-organizer"
+  dates: "2020 – 2022"
+  group: "Community"
+  body: >
+    Machine learning projects competition at Polytechnique Yaoundé.
+
+- title: "Interpolate workshop @ NeurIPS 2022"
+  url: "https://sites.google.com/view/interpolation-workshop"
+  role: "Organizing committee"
+  dates: "2022"
+  group: "Community"
+  body: >
+    First Workshop on Interpolation Regularizers and Beyond.
+
+- title: "Deep Learning IndabaX Rwanda"
+  role: "Co-organizer"
+  dates: "Apr 2019"
+  group: "Community"
+  body: >
+    The first Deep Learning IndabaX in Rwanda, held in Kigali.

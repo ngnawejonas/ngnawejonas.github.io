@@ -1,0 +1,25 @@
+{% comment %}
+  Link buttons for one publication (`post`). Empty strings are truthy in
+  Liquid, so every link is tested for content as well — otherwise a blank
+  `slidesurl:` renders a dead button.
+{% endcomment %}
+<p class="pub__links">
+  {% if post.paperurl and post.paperurl != "" %}
+    <a href="{{ post.paperurl }}" class="btn btn--info btn--small">Paper</a>
+  {% endif %}
+  {% if post.posterurl and post.posterurl != "" %}
+    <a href="{{ post.posterurl }}" class="btn btn--info btn--small">NeurIPS page</a>
+  {% endif %}
+  {% if post.projecturl and post.projecturl != "" %}
+    <a href="{{ post.projecturl }}" class="btn btn--info btn--small">Project page</a>
+  {% endif %}
+  {% if post.codeurl and post.codeurl != "" %}
+    <a href="{{ post.codeurl }}" class="btn btn--info btn--small">Code</a>
+  {% endif %}
+  {% if post.slidesurl and post.slidesurl != "" %}
+    <a href="{{ post.slidesurl }}" class="btn btn--info btn--small">Slides</a>
+  {% endif %}
+  {% if post.videourl and post.videourl != "" %}
+    <a href="{{ post.videourl }}" class="btn btn--info btn--small">Video</a>
+  {% endif %}
+</p>

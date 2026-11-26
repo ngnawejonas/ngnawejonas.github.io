@@ -4,13 +4,13 @@ authors: "M. Heuillet, R. Bhagwatkar, J. Ngnawé, Y. Pequignot, A. Larouche, C. 
 collection: publications
 category: workshops
 permalink: /publication/2025-08-12-robust-generalization-guide
-excerpt: 'This work presents the most comprehensive benchmark of robust fine-tuning to date, revealing how architecture, pretraining, and adaptation choices impact robust generalization across diverse datasets, perturbations, and training protocols.'
+excerpt: 'An empirical study of robust fine-tuning across 6 datasets, 40 pretrained architectures, 2 specialized losses and 3 adaptation protocols (1,440 training configurations). Convolutional networks pretrained in a supervised manner on large datasets often perform best, confirming some prior design assumptions and challenging others.'
 header:
   teaser: publications/robust-generalization-guide-thumb.png
 date: 2025-08-12
 venue: 'NeurIPS 2025 Reliable ML Workshop'
 paperurl: 'https://arxiv.org/abs/2508.14079'
-citation: 'Heuillet, M., Bhagwatkar, R., Ngnawé. J., Pequignot, Y., Larouche, A., Gagné, C., Rish, I., Ahmad, O., Durand, A. (2025). A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy. arXiv preprint arXiv:2508.14079.'
+citation: 'Heuillet, M., Bhagwatkar, R., Ngnawé, J., Pequignot, Y., Larouche, A., Gagné, C., Rish, I., Ahmad, O., & Durand, A. (2025). A Guide to Robust Generalization: The Impact of Architecture, Pre-training, and Optimization Strategy. arXiv preprint arXiv:2508.14079.'
 ---
 
 <figure>

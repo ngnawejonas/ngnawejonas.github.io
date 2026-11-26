@@ -1,7 +1,11 @@
 {% include base_path %}
 
 <div class="news">
-  {% for item in site.data.news %}
+  {% comment %} Pass `limit` to show only the most recent entries (home page). {% endcomment %}
+  {% assign news_limit = include.limit | default: 1000 %}
+  {% for item in site.data.news limit: news_limit %}
+    {% comment %} `highlight=true` keeps only the entries flagged `highlight: true`. {% endcomment %}
+    {% if include.highlight and item.highlight != true %}{% continue %}{% endif %}
     <div class="news__item">
       <div class="news__meta">{{ item.date }}</div>
 
